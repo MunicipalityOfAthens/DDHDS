@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:definitions xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="BonitaSoft" exporterVersion="5.9" expressionLanguage="http://groovy.codehaus.org/" targetNamespace="http://bonitasoft.com/ddt_automations">
+  <model:collaboration id="ddt_automations">
+    <model:documentation></model:documentation>
+    <model:participant id="Initiator">
+      <model:documentation>Person who takes the first action to start the process</model:documentation>
+    </model:participant>
+    <model:participant id="error_viewer">
+      <model:documentation></model:documentation>
+    </model:participant>
+    <model:participant id="_6Ac6wAsqEeipndW50ivpDA" name="ddt_automations" processRef="ddt_automations"/>
+  </model:collaboration>
+  <model:process id="ddt_automations" name="ddt_automations">
+    <model:documentation></model:documentation>
+    <model:startEvent id="Start1" name="Start1">
+      <model:documentation></model:documentation>
+    </model:startEvent>
+    <model:intermediateThrowEvent id="check_month_radweriel_error" name="check_month_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="check_month_folder_in_year_of_given_folder" name="&#x388;&#x3bb;&#x3b5;&#x3b3;&#x3c7;&#x3bf;&#x3c2; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&quot; &#x3c3;&#x3c4;&#x3bf;&#x3bd; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &quot;&#x388;&#x3c4;&#x3bf;&#x3c2;&quot;">
+      <model:documentation>&#x395;&#x3bb;&#x3ad;&#x3b3;&#x3c7;&#x3b5;&#x3b9; &#x3b1;&#x3bd; &#x3c5;&#x3c0;&#x3ac;&#x3c1;&#x3c7;&#x3b5;&#x3b9; &#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c2; &#x3bc;&#x3b5; &#x3c4;&#x3bf; &#x3cc;&#x3bd;&#x3bf;&#x3bc;&#x3b1; &#x3c4;&#x3bf;&#x3c5; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd;&#x3c4;&#x3bf;&#x3c2; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&quot; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &quot;&#x388;&#x3c4;&#x3bf;&#x3c2;&quot; &#x3c3;&#x3c4;&#x3bf;&#x3bd; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error5" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel5" attachedToRef="check_month_folder_in_year_of_given_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error5" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="check_year_folder_radweriel_error" name="check_year_folder_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:intermediateThrowEvent id="create_from_month_radweriel_error" name="create_from_month_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="check_given_folder" name="&#x388;&#x3bb;&#x3b5;&#x3b3;&#x3c7;&#x3bf;&#x3c2; &#x3cd;&#x3c0;&#x3b1;&#x3c1;&#x3be;&#x3b7;&#x3c2; &#x3b4;&#x3bf;&#x3b8;&#x3ad;&#x3bd;&#x3c4;&#x3bf;&#x3c2; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; ">
+      <model:documentation>&#x395;&#x3bb;&#x3ad;&#x3b3;&#x3c7;&#x3b5;&#x3b9; &#x3b1;&#x3bd; &#x3c5;&#x3c0;&#x3ac;&#x3c1;&#x3c7;&#x3b5;&#x3b9; &#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c2; &#x3bc;&#x3b5; &#x3c4;&#x3bf; &#x3cc;&#x3bd;&#x3bf;&#x3bc;&#x3b1; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3ba;&#x3b5;&#x3bd;&#x3c4;&#x3c1;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf; site &#x3c4;&#x3b7;&#x3c2; &#x394;/&#x3bd;&#x3c3;&#x3b7;&#x3c2;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error1" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel1" attachedToRef="check_given_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error1" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:serviceTask id="check_year_folder_in_given_folder" name="&#x388;&#x3bb;&#x3b5;&#x3b3;&#x3c7;&#x3bf;&#x3c2; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &quot;&#x388;&#x3c4;&#x3bf;&#x3c5;&#x3c2;&quot; &#x3c3;&#x3c4;&#x3bf;&#x3bd; &#x391;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3cc; &#x3a6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;">
+      <model:documentation>&#x395;&#x3bb;&#x3ad;&#x3b3;&#x3c7;&#x3b5;&#x3b9; &#x3b1;&#x3bd; &#x3c5;&#x3c0;&#x3ac;&#x3c1;&#x3c7;&#x3b5;&#x3b9; &#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c2; &#x3bc;&#x3b5; &#x3c4;&#x3bf; &#x3cc;&#x3bd;&#x3bf;&#x3bc;&#x3b1; &#x3c4;&#x3bf;&#x3c5; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd;&#x3c4;&#x3bf;&#x3c2; &quot;&#x395;&#x3c4;&#x3bf;&#x3c5;&#x3c2;&quot; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error3" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel3" attachedToRef="check_year_folder_in_given_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error3" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:serviceTask id="creation_of_month_day_folder" name="&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3af;&#x3b1; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &#x39c;&#x3ae;&#x3bd;&#x3b1;&#x3c2; - &#x39c;&#x3ad;&#x3c1;&#x3b1;">
+      <model:documentation>&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3b5;&#x3af; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3bc;&#x3b5; &#x3bf;&#x3bd;&#x3cc;&#x3bc;&#x3b1; &#x3c4;&#x3bf;&#x3bd; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd;&#x3c4;&#x3b1; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&quot; &#x3ba;&#x3b1;&#x3b9; &quot;&#x39c;&#x3ad;&#x3c1;&#x3b1;&quot; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf;&#x3bd; &#x3c5;&#x3c0;&#x3bf;&#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &quot;&#x388;&#x3c4;&#x3bf;&#x3c2;&quot;&#x3c4;&#x3bf;&#x3c5; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3bf;&#x3cd; &#x3c6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error6" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel_6" attachedToRef="creation_of_month_day_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error6" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="check_initial_folder_radweriel_error" name="check_initial_folder_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="creation_of_folders_given_folder_year_month_day" name="&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3af;&#x3b1; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3c9;&#x3bd;: &quot;&#x3a6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c2; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae;&quot;  - &#x388;&#x3c4;&#x3bf;&#x3c2; - &#x39c;&#x3ae;&#x3bd;&#x3b1;&#x3c2;-&#x39c;&#x3ad;&#x3c1;&#x3b1;">
+      <model:documentation>&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3b5;&#x3af; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c5;&#x3c2; &#x3bc;&#x3b5; &#x3bf;&#x3bd;&#x3cc;&#x3bc;&#x3b1;&#x3c4;&#x3b1;: &quot;&#x3a6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c2; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae;&quot;&quot;, &#x3c4;&#x3bf; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd; &quot;&#x388;&#x3c4;&#x3bf;&#x3c2;&quot;, &#x3c4;&#x3bf;&#x3bd; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd;&#x3c4;&#x3b1; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&quot; &#x3ba;&#x3b1;&#x3b9; &#x3c4;&#x3b7;&#x3bd; &quot;&#x39c;&#x3ad;&#x3c1;&#x3b1;&quot; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf; site &#x3c4;&#x3b7;&#x3c2; &#x394;/&#x3bd;&#x3c3;&#x3b7;&#x3c2;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error2" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; radweriel2" attachedToRef="creation_of_folders_given_folder_year_month_day">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error2" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:serviceTask id="creation_of_folders_year_month_day_in_given_folder" name="&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3af;&#x3b1; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3c9;&#x3bd;: &#x388;&#x3c4;&#x3bf;&#x3c2; - &#x39c;&#x3ae;&#x3bd;&#x3b1;&#x3c2; - &#x39c;&#x3ad;&#x3c1;&#x3b1;">
+      <model:documentation>&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3b5;&#x3af; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf;&#x3c5;&#x3c2; &#x3bc;&#x3b5; &#x3bf;&#x3bd;&#x3cc;&#x3bc;&#x3b1;&#x3c4;&#x3b1; &#x3c4;&#x3bf; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd; &quot;&#x388;&#x3c4;&#x3bf;&#x3c2;&quot; &#x3ba;&#x3b1;&#x3b9; &#x3c4;&#x3c1;&#x3ad;&#x3c7;&#x3bf;&#x3bd;&#x3c4;&#x3b1; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&quot; &#x3ba;&#x3b1;&#x3b9; &quot;&#x39c;&#x3ad;&#x3c1;&#x3b1;&quot; &#x3bc;&#x3ad;&#x3c3;&#x3b1; &#x3c3;&#x3c4;&#x3bf; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3c0;&#x3bf;&#x3c5; &#x3b4;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3b1;&#x3c0;&#x3cc; &#x3c4;&#x3b7;&#x3bd; &#x3b1;&#x3c1;&#x3c7;&#x3b9;&#x3ba;&#x3ae; &#x3c1;&#x3bf;&#x3ae;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error4" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; radweriel4" attachedToRef="creation_of_folders_year_month_day_in_given_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error4" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="create_all_folders_radweriel_error" name="create_all_folders_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:intermediateThrowEvent id="create_from_year_radweriel_error" name="create_from_year_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:endEvent id="Terminate_End_Event1" name="Terminate_End_Event1">
+      <model:documentation></model:documentation>
+      <model:terminateEventDefinition id="_6AeI4AsqEeipndW50ivpDA"/>
+    </model:endEvent>
+    <model:intermediateCatchEvent id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="_6AeI4QsqEeipndW50ivpDA">
+        <model:source>check_initial_folder_radweriel_error</model:source>
+        <model:source>create_all_folders_radweriel_error</model:source>
+        <model:source>check_year_folder_radweriel_error</model:source>
+        <model:source>create_from_year_radweriel_error</model:source>
+        <model:source>check_month_radweriel_error</model:source>
+        <model:source>create_from_month_radweriel_error</model:source>
+        <model:source>move_temporary_folder_in_rejected_files_radweriel_error</model:source>
+        <model:source>copy_folder_with_files_radweriel_error</model:source>
+        <model:source>rename_copied_folder_with_protocol_number_radweriel_error</model:source>
+        <model:source>count_object_2_be_copied_children_radweriel_error12</model:source>
+        <model:source>evaluate_number_of_children_of_copied_object_radweriel_error</model:source>
+        <model:source>recipients_and_notifications_create_case_folder_radweriel_error</model:source>
+        <model:source>check_day_radweriel_error</model:source>
+        <model:source>create_from_day_radweriel_error</model:source>
+        <model:source>create_link_2_attached_files_folder_radweriel_error</model:source>
+      </model:linkEventDefinition>
+      <model:eventDefinitionRef>check_initial_folder_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>create_all_folders_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>check_year_folder_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>create_from_year_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>check_month_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>create_from_month_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>move_temporary_folder_in_rejected_files_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>copy_folder_with_files_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>rename_copied_folder_with_protocol_number_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>count_object_2_be_copied_children_radweriel_error12</model:eventDefinitionRef>
+      <model:eventDefinitionRef>evaluate_number_of_children_of_copied_object_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>recipients_and_notifications_create_case_folder_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>check_day_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>create_from_day_radweriel_error</model:eventDefinitionRef>
+      <model:eventDefinitionRef>create_link_2_attached_files_folder_radweriel_error</model:eventDefinitionRef>
+    </model:intermediateCatchEvent>
+    <model:userTask id="visual_radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; &#x3c3;&#x3b5; radweriel">
+      <model:documentation>&#x395;&#x3bd;&#x3b7;&#x3bc;&#x3ad;&#x3c1;&#x3c9;&#x3c3;&#x3b7; &#x3b3;&#x3b9;&#x3b1; &#x3b1;&#x3c0;&#x3c1;&#x3cc;&#x3c3;&#x3bc;&#x3b5;&#x3bd;&#x3bf; &#x3bb;&#x3ac;&#x3b8;&#x3bf;&#x3c2; &#x3c3;&#x3b5; &#x3c3;&#x3cd;&#x3c3;&#x3c4;&#x3b7;&#x3bc;&#x3b1; &#x397;/&#x394; O &#x3b4;&#x3b9;&#x3b1;&#x3c7;&#x3b5;&#x3b9;&#x3c1;&#x3b9;&#x3c3;&#x3c4;&#x3ae;&#x3c2; &#x3b8;&#x3b1; &#x3c0;&#x3c1;&#x3ad;&#x3c0;&#x3b5;&#x3b9; &#x3bd;&#x3b1; &#x3b5;&#x3c0;&#x3b9;&#x3b4;&#x3b9;&#x3bf;&#x3c1;&#x3b8;&#x3ce;&#x3c3;&#x3b5;&#x3b9; &#x3c4;&#x3bf; &#x3c0;&#x3c1;&#x3cc;&#x3b2;&#x3bb;&#x3b7;&#x3bc;&#x3b1; &#x3ba;&#x3b1;&#x3b9; &#x3bd;&#x3b1; &#x3b5;&#x3c0;&#x3b9;&#x3c3;&#x3c4;&#x3c1;&#x3ad;&#x3c8;&#x3b5;&#x3b9; &#x3c4;&#x3b7;&#x3bd; &#x3c1;&#x3bf;&#x3ae; &#x3c3;&#x3b5; &#x3c0;&#x3c1;&#x3bf;&#x3b7;&#x3b3;&#x3bf;&#x3cd;&#x3bc;&#x3b5;&#x3bd;&#x3bf; &#x3b2;&#x3ae;&#x3bc;&#x3b1;.</model:documentation>
+    </model:userTask>
+    <model:endEvent id="terminate_due_2_radweriel_error" name="&#x3a4;&#x3b5;&#x3c1;&#x3bc;&#x3b1;&#x3c4;&#x3b9;&#x3c3;&#x3bc;&#x3cc;&#x3c2; &#x3bb;&#x3cc;&#x3b3;&#x3c9; &#x3bb;&#x3ac;&#x3b8;&#x3bf;&#x3c5;&#x3c2; &#x3c3;&#x3b5; Radweriel">
+      <model:documentation></model:documentation>
+      <model:terminateEventDefinition id="_6AeI4gsqEeipndW50ivpDA"/>
+    </model:endEvent>
+    <model:exclusiveGateway id="check_initial_folder_gateway" name="check initial folder gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:exclusiveGateway id="check_year_folder_gateway" name="check year folder gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:exclusiveGateway id="check_month_folder_gateway" name="check month folder gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:inclusiveGateway id="cc_fc_lfc_gateway" name="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+    </model:inclusiveGateway>
+    <model:serviceTask id="move_temporary_folder_in_rejected_files" name="M&#x3b5;&#x3c4;&#x3b1;&#x3ba;&#x3af;&#x3bd;&#x3b7;&#x3c3;&#x3b7; &#x3c0;&#x3c1;&#x3bf;&#x3c3;&#x3c9;&#x3c1;&#x3b9;&#x3bd;&#x3bf;&#x3cd; &#x3c6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5;  &#x3c3;&#x3c4;&#x3b1; &#x391;&#x3c0;&#x3bf;&#x3c1;&#x3c1;&#x3b9;&#x3c6;&#x3b8;&#x3ad;&#x3bd;&#x3c4;&#x3b1;">
+      <model:documentation> &#x3bc;&#x3b5;&#x3c4;&#x3b1;&#x3ba;&#x3b9;&#x3bd;&#x3b5;&#x3af; &#x3c4;&#x3bf;&#x3bd; &#x3c0;&#x3c1;&#x3bf;&#x3c3;&#x3c9;&#x3c1;&#x3b9;&#x3bd;&#x3cc; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3bc;&#x3b5; &#x3c4;&#x3b1; &#x3c0;&#x3b5;&#x3c1;&#x3b9;&#x3b5;&#x3c7;&#x3cc;&#x3bc;&#x3b5;&#x3bd;&#x3ac; &#x3c4;&#x3bf;&#x3c5; &#x3c3;&#x3c4;&#x3b1; &#x391;&#x3c0;&#x3bf;&#x3c1;&#x3c1;&#x3b9;&#x3c6;&#x3b8;&#x3ad;&#x3bd;&#x3c4;&#x3b1;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error7" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; radweriel7" attachedToRef="move_temporary_folder_in_rejected_files">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error7" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="move_temporary_folder_in_rejected_files_radweriel_error" name="move_temporary_folder_in_rejected_files_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:endEvent id="Terminate_End_Event2" name="Terminate_End_Event2">
+      <model:documentation></model:documentation>
+      <model:terminateEventDefinition id="_6AeI4wsqEeipndW50ivpDA"/>
+    </model:endEvent>
+    <model:serviceTask id="get_emails_from_agent_in_ldap_and_notify_ou" name="get_emails_from_agent_in_ldap_and_notify_ou">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="ldap_error1" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; LDAP1" attachedToRef="get_emails_from_agent_in_ldap_and_notify_ou">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-ldap_error1" errorRef="LDAP_error"/>
+    </model:boundaryEvent>
+    <model:intermediateCatchEvent id="LDAP_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; LDAP">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="_6AeI5AsqEeipndW50ivpDA">
+        <model:source>get_emails_from_agent_in_ldap_and_notify_ou_ldap_error</model:source>
+      </model:linkEventDefinition>
+      <model:eventDefinitionRef>get_emails_from_agent_in_ldap_and_notify_ou_ldap_error</model:eventDefinitionRef>
+    </model:intermediateCatchEvent>
+    <model:endEvent id="terminate_due_2_ldap_error" name="&#x3a4;&#x3b5;&#x3c1;&#x3bc;&#x3b1;&#x3c4;&#x3b9;&#x3c3;&#x3bc;&#x3cc;&#x3c2; &#x3bb;&#x3cc;&#x3b3;&#x3c9; &#x3bb;&#x3ac;&#x3b8;&#x3bf;&#x3c5;&#x3c2; &#x3c3;&#x3c4;&#x3bf;&#x3bd; LDAP">
+      <model:documentation></model:documentation>
+      <model:terminateEventDefinition id="_6AeI5QsqEeipndW50ivpDA"/>
+    </model:endEvent>
+    <model:userTask id="visual_ldap_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; &#x3c3;&#x3b5; LDAP">
+      <model:documentation></model:documentation>
+    </model:userTask>
+    <model:intermediateThrowEvent id="get_emails_from_agent_in_ldap_and_notify_ou_ldap_error" name="get_emails_from_agent_in_ldap_and_notify_ou_ldap_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="LDAP_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; LDAP">
+        <model:target>LDAP_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:exclusiveGateway id="emails_gateway" name="emails gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:serviceTask id="Copy_folder_with_files" name="&#x391;&#x3bd;&#x3c4;&#x3b9;&#x3b3;&#x3c1;&#x3b1;&#x3c6;&#x3ae; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3c9;&#x3bd; &#x3ba;&#x3b1;&#x3b9; &#x3b1;&#x3c1;&#x3c7;&#x3b5;&#x3af;&#x3c9;&#x3bd;">
+      <model:documentation>&#x391;&#x3bd;&#x3c4;&#x3b9;&#x3b3;&#x3c1;&#x3ac;&#x3c6;&#x3b5;&#x3b9; &#x3c4;&#x3bf;&#x3bd; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &#x3bc;&#x3b5; &#x3c4;&#x3b1; &#x3b1;&#x3c1;&#x3c7;&#x3b5;&#x3af;&#x3b1; &#x3c3;&#x3c4;&#x3b7;&#x3bd; &#x3b5;&#x3c0;&#x3b9;&#x3bb;&#x3b5;&#x3b3;&#x3bc;&#x3ad;&#x3bd;&#x3b7; &#x394;&#x3b9;&#x3ad;&#x3c5;&#x3b8;&#x3c5;&#x3bd;&#x3c3;&#x3b7;</model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error8" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel8" attachedToRef="Copy_folder_with_files">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error8" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="copy_folder_with_files_radweriel_error" name="copy_folder_with_files_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="rename_copied_folder_with_protocol_number" name="Rename_copied_folder_with_protocol_number">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error10" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel10" attachedToRef="rename_copied_folder_with_protocol_number">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error10" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="rename_copied_folder_with_protocol_number_radweriel_error" name="rename_copied_folder_with_protocol_number_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="count_object_2_be_copied_children" name="&#x39c;&#x3ad;&#x3c4;&#x3c1;&#x3b7;&#x3c3;&#x3b7; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3c9;&#x3bd; &#x3ba;&#x3b1;&#x3b9; &#x3b1;&#x3c1;&#x3c7;&#x3b5;&#x3af;&#x3c9;&#x3bd; &#x391;&#x3bd;&#x3c4;&#x3b9;&#x3ba;&#x3b5;&#x3b9;&#x3bc;&#x3ad;&#x3bd;&#x3bf;&#x3c5; &#x3c0;&#x3c1;&#x3bf;&#x3c2; &#x391;&#x3bd;&#x3c4;&#x3b9;&#x3b3;&#x3c1;&#x3b1;&#x3c6;&#x3ae;">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error11" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel11" attachedToRef="count_object_2_be_copied_children">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error11" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="count_object_2_be_copied_children_radweriel_error12" name="count_object_2_be_copied_children_radweriel_error12">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="evaluate_number_of_children_of_copied_object" name="&#x39c;&#x3ad;&#x3c4;&#x3c1;&#x3b7;&#x3c3;&#x3b7; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3c9;&#x3bd; &#x3ba;&#x3b1;&#x3b9; &#x3b1;&#x3c1;&#x3c7;&#x3b5;&#x3af;&#x3c9;&#x3bd; &#x391;&#x3bd;&#x3c4;&#x3b5;&#x3b3;&#x3c1;&#x3b1;&#x3bc;&#x3bc;&#x3ad;&#x3bd;&#x3bf;&#x3c5; &#x391;&#x3bd;&#x3c4;&#x3b9;&#x3ba;&#x3b5;&#x3b9;&#x3bc;&#x3ad;&#x3bd;&#x3bf;&#x3c5;">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error12" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel12" attachedToRef="evaluate_number_of_children_of_copied_object">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error12" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="evaluate_number_of_children_of_copied_object_radweriel_error" name="evaluate_number_of_children_of_copied_object_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="recipients_and_notifications_create_case_folder" name="&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3af;&#x3b1; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &#x3a5;&#x3c0;&#x3cc;&#x3b8;&#x3b5;&#x3c3;&#x3b7;&#x3c2; &#x3c3;&#x3c4;&#x3bf;&#x3c5;&#x3c2; &#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3bb;&#x3ae;&#x3c0;&#x3c4;&#x3b5;&#x3c2;">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error13" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel13" attachedToRef="recipients_and_notifications_create_case_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error13" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="recipients_and_notifications_create_case_folder_radweriel_error" name="recipients_and_notifications_create_case_folder_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="check_day_folder_in_month_folder" name="&#x388;&#x3bb;&#x3b5;&#x3b3;&#x3c7;&#x3bf;&#x3c2; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &quot;&#x39c;&#x3ad;&#x3c1;&#x3b1;&#x3c2;&quot; &#x3c3;&#x3c4;&#x3bf;&#x3bd; &#x3c6;&#x3ac;&#x3ba;&#x3b5;&#x3bb;&#x3bf; &quot;&#x39c;&#x3ae;&#x3bd;&#x3b1;&#x3c2;&quot;">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error14" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel14" attachedToRef="check_day_folder_in_month_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error14" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="check_day_radweriel_error" name="check_day_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:exclusiveGateway id="check_day_folder_gateway" name="check day folder gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:serviceTask id="creation_of_day_folder" name="&#x394;&#x3b7;&#x3bc;&#x3b9;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3af;&#x3b1; &#x3a6;&#x3b1;&#x3ba;&#x3ad;&#x3bb;&#x3bf;&#x3c5; &#x39c;&#x3ad;&#x3c1;&#x3b1;&#x3c2;">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error15" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel15" attachedToRef="creation_of_day_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error15" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="create_from_day_radweriel_error" name="create_from_day_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:serviceTask id="automations" name="automations">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:exclusiveGateway id="aggregation_initial_folder_year_month_folder_gateway" name="aggregation initial_folder_year_month folder gateway">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:serviceTask id="move_folder_2_approved_cases_cc_fc_qol" name="move_folder_2_approved_cases_cc_fc_qol">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error16" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel16" attachedToRef="move_folder_2_approved_cases_cc_fc_qol">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error16" errorRef="cc_fc_qol_radweriel_error"/>
+    </model:boundaryEvent>
+    <model:endEvent id="Terminate_End_Event3" name="Terminate_End_Event3">
+      <model:documentation></model:documentation>
+      <model:terminateEventDefinition id="_6Aev8AsqEeipndW50ivpDA"/>
+    </model:endEvent>
+    <model:intermediateThrowEvent id="move_folder_2_approved_cases_cc_fc_qol_radweriel_error" name="move_folder_2_approved_cases_cc_fc_qol_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="cc_fc_qol_radweriel_error" name="cc_fc_qol_&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>cc_fc_qol_radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:exclusiveGateway id="attached_files_folder_has_children" name="attached_files_folder_has_children">
+      <model:documentation></model:documentation>
+    </model:exclusiveGateway>
+    <model:serviceTask id="create_link_2_attached_files_folder" name="create_link_2_attached_files_folder">
+      <model:documentation></model:documentation>
+    </model:serviceTask>
+    <model:boundaryEvent id="radweriel_error17" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel17" attachedToRef="create_link_2_attached_files_folder">
+      <model:documentation></model:documentation>
+      <model:errorEventDefinition id="eventdef-radweriel_error17" errorRef="radweriel_error"/>
+    </model:boundaryEvent>
+    <model:intermediateThrowEvent id="create_link_2_attached_files_folder_radweriel_error" name="create_link_2_attached_files_folder_radweriel_error">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="radweriel_error" name="&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+        <model:target>radweriel_error</model:target>
+      </model:linkEventDefinition>
+    </model:intermediateThrowEvent>
+    <model:intermediateCatchEvent id="cc_fc_qol_radweriel_error" name="cc_fc_qol_&#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+      <model:documentation></model:documentation>
+      <model:linkEventDefinition id="_6Aev8QsqEeipndW50ivpDA">
+        <model:source>move_folder_2_approved_cases_cc_fc_qol_radweriel_error</model:source>
+      </model:linkEventDefinition>
+      <model:eventDefinitionRef>move_folder_2_approved_cases_cc_fc_qol_radweriel_error</model:eventDefinitionRef>
+    </model:intermediateCatchEvent>
+    <model:userTask id="email_notification_of_president_and_agents_for_radweriel_error" name="&#x395;&#x3bd;&#x3b7;&#x3bc;&#x3ad;&#x3c1;&#x3c9;&#x3c3;&#x3b7; &#x393;&#x3c1;&#x3b1;&#x3bc;&#x3bc;&#x3b1;&#x3c4;&#x3b5;&#x3af;&#x3b1;&#x3c2; &#x3ba;&#x3b1;&#x3b9; &#x3a0;&#x3c1;&#x3bf;&#x3ad;&#x3b4;&#x3c1;&#x3bf;&#x3c5; &#x3b3;&#x3b9;&#x3b1; &#x39b;&#x3ac;&#x3b8;&#x3bf;&#x3c2; Radweriel">
+      <model:documentation></model:documentation>
+    </model:userTask>
+    <model:sequenceFlow id="_zBOYuD-WEeeybe21XcWwfg" sourceRef="check_month_folder_in_year_of_given_folder" targetRef="check_month_folder_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYuj-WEeeybe21XcWwfg" sourceRef="check_month_folder_gateway" targetRef="creation_of_month_day_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>month_name_exist==false</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYvD-WEeeybe21XcWwfg" sourceRef="check_initial_folder_gateway" targetRef="creation_of_folders_given_folder_year_month_day">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>folder_name_exist==false</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYvj-WEeeybe21XcWwfg" sourceRef="check_given_folder" targetRef="check_initial_folder_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYwD-WEeeybe21XcWwfg" sourceRef="check_year_folder_gateway" targetRef="creation_of_folders_year_month_day_in_given_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>year_name_exist==false</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYwj-WEeeybe21XcWwfg" sourceRef="check_year_folder_in_given_folder" targetRef="check_year_folder_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYxD-WEeeybe21XcWwfg" sourceRef="creation_of_month_day_folder" targetRef="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYxj-WEeeybe21XcWwfg" sourceRef="creation_of_folders_given_folder_year_month_day" targetRef="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYyD-WEeeybe21XcWwfg" sourceRef="creation_of_folders_year_month_day_in_given_folder" targetRef="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYyj-WEeeybe21XcWwfg" sourceRef="radweriel_error5" targetRef="check_month_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYzD-WEeeybe21XcWwfg" sourceRef="radweriel_error1" targetRef="check_initial_folder_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOYzj-WEeeybe21XcWwfg" sourceRef="radweriel_error3" targetRef="check_year_folder_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY0D-WEeeybe21XcWwfg" sourceRef="radweriel_error6" targetRef="create_from_month_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY0j-WEeeybe21XcWwfg" sourceRef="radweriel_error2" targetRef="create_all_folders_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY1D-WEeeybe21XcWwfg" sourceRef="radweriel_error4" targetRef="create_from_year_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY1j-WEeeybe21XcWwfg" sourceRef="Start1" targetRef="automations">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY2D-WEeeybe21XcWwfg" sourceRef="radweriel_error" targetRef="visual_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY2j-WEeeybe21XcWwfg" sourceRef="visual_radweriel_error" targetRef="terminate_due_2_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY3D-WEeeybe21XcWwfg" sourceRef="check_initial_folder_gateway" targetRef="check_year_folder_in_given_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>folder_name_exist==true</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY3j-WEeeybe21XcWwfg" sourceRef="check_year_folder_gateway" targetRef="check_month_folder_in_year_of_given_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>year_name_exist==true</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY4D-WEeeybe21XcWwfg" sourceRef="check_month_folder_gateway" targetRef="check_day_folder_in_month_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>month_name_exist==true</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBOY4j-WEeeybe21XcWwfg" sourceRef="emails_gateway" targetRef="get_emails_from_agent_in_ldap_and_notify_ou">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>(folder_name != &quot;&#x391;&#x3c0;&#x3b5;&#x3c3;&#x3c4;&#x3b1;&#x3bb;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)&amp;&amp;(folder_name != &quot;&#x3a0;&#x3c1;&#x3c9;&#x3c4;&#x3bf;&#x3ba;&#x3bf;&#x3bb;&#x3bb;&#x3b7;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_YT-WEeeybe21XcWwfg" sourceRef="aggregation_initial_folder_year_month_folder_gateway" targetRef="count_object_2_be_copied_children">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>(approval==1)&amp;&amp;(folder_name == &quot;&#x3a0;&#x3c1;&#x3c9;&#x3c4;&#x3bf;&#x3ba;&#x3bf;&#x3bb;&#x3bb;&#x3b7;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_Yz-WEeeybe21XcWwfg" sourceRef="aggregation_initial_folder_year_month_folder_gateway" targetRef="move_temporary_folder_in_rejected_files">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>approval==2</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_ZT-WEeeybe21XcWwfg" sourceRef="move_temporary_folder_in_rejected_files" targetRef="Terminate_End_Event2">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_Zz-WEeeybe21XcWwfg" sourceRef="get_emails_from_agent_in_ldap_and_notify_ou" targetRef="Terminate_End_Event1">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_aT-WEeeybe21XcWwfg" sourceRef="LDAP_error" targetRef="visual_ldap_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_az-WEeeybe21XcWwfg" sourceRef="visual_ldap_error" targetRef="terminate_due_2_ldap_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_bT-WEeeybe21XcWwfg" sourceRef="emails_gateway" targetRef="Terminate_End_Event1">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>(folder_name == &quot;&#x391;&#x3c0;&#x3b5;&#x3c3;&#x3c4;&#x3b1;&#x3bb;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)||(folder_name == &quot;&#x3a0;&#x3c1;&#x3c9;&#x3c4;&#x3bf;&#x3ba;&#x3bf;&#x3bb;&#x3bb;&#x3b7;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_bz-WEeeybe21XcWwfg" sourceRef="Copy_folder_with_files" targetRef="evaluate_number_of_children_of_copied_object">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_cT-WEeeybe21XcWwfg" sourceRef="rename_copied_folder_with_protocol_number" targetRef="emails_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_cz-WEeeybe21XcWwfg" sourceRef="radweriel_error10" targetRef="rename_copied_folder_with_protocol_number_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_dT-WEeeybe21XcWwfg" sourceRef="radweriel_error11" targetRef="count_object_2_be_copied_children_radweriel_error12">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_dz-WEeeybe21XcWwfg" sourceRef="count_object_2_be_copied_children" targetRef="Copy_folder_with_files">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_eT-WEeeybe21XcWwfg" sourceRef="evaluate_number_of_children_of_copied_object" targetRef="rename_copied_folder_with_protocol_number">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_ez-WEeeybe21XcWwfg" sourceRef="radweriel_error12" targetRef="evaluate_number_of_children_of_copied_object_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_fT-WEeeybe21XcWwfg" sourceRef="aggregation_initial_folder_year_month_folder_gateway" targetRef="recipients_and_notifications_create_case_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>(approval==1)&amp;&amp;(folder_name!=&quot;&#x3a0;&#x3c1;&#x3c9;&#x3c4;&#x3bf;&#x3ba;&#x3bf;&#x3bb;&#x3bb;&#x3b7;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;)</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_fz-WEeeybe21XcWwfg" sourceRef="radweriel_error13" targetRef="recipients_and_notifications_create_case_folder_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_gT-WEeeybe21XcWwfg" sourceRef="radweriel_error14" targetRef="check_day_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_gz-WEeeybe21XcWwfg" sourceRef="check_day_folder_in_month_folder" targetRef="check_day_folder_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_hT-WEeeybe21XcWwfg" sourceRef="check_day_folder_gateway" targetRef="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>day_name_exist==true</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_hz-WEeeybe21XcWwfg" sourceRef="radweriel_error15" targetRef="create_from_day_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_iT-WEeeybe21XcWwfg" sourceRef="check_day_folder_gateway" targetRef="creation_of_day_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>day_name_exist==false</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_iz-WEeeybe21XcWwfg" sourceRef="recipients_and_notifications_create_case_folder" targetRef="attached_files_folder_has_children">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_jT-WEeeybe21XcWwfg" sourceRef="creation_of_day_folder" targetRef="cc_fc_lfc_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_jz-WEeeybe21XcWwfg" sourceRef="automations" targetRef="check_given_folder">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_kT-WEeeybe21XcWwfg" sourceRef="cc_fc_lfc_gateway" targetRef="aggregation_initial_folder_year_month_folder_gateway">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>folder_name!=&quot;&#x395;&#x3b3;&#x3ba;&#x3b5;&#x3ba;&#x3c1;&#x3b9;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;;</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_kz-WEeeybe21XcWwfg" sourceRef="cc_fc_lfc_gateway" targetRef="move_folder_2_approved_cases_cc_fc_qol">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>folder_name==&quot;&#x395;&#x3b3;&#x3ba;&#x3b5;&#x3ba;&#x3c1;&#x3b9;&#x3bc;&#x3ad;&#x3bd;&#x3b1;&quot;;</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_lT-WEeeybe21XcWwfg" sourceRef="move_folder_2_approved_cases_cc_fc_qol" targetRef="Terminate_End_Event3">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_lz-WEeeybe21XcWwfg" sourceRef="radweriel_error16" targetRef="move_folder_2_approved_cases_cc_fc_qol_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_mT-WEeeybe21XcWwfg" sourceRef="attached_files_folder_has_children" targetRef="emails_gateway">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>attached_files_folder_has_children==false</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_mz-WEeeybe21XcWwfg" sourceRef="attached_files_folder_has_children" targetRef="create_link_2_attached_files_folder">
+      <model:documentation></model:documentation>
+      <model:conditionExpression>attached_files_folder_has_children==true</model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_nT-WEeeybe21XcWwfg" sourceRef="create_link_2_attached_files_folder" targetRef="emails_gateway">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_nz-WEeeybe21XcWwfg" sourceRef="radweriel_error17" targetRef="create_link_2_attached_files_folder_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_oT-WEeeybe21XcWwfg" sourceRef="radweriel_error7" targetRef="move_temporary_folder_in_rejected_files_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_oz-WEeeybe21XcWwfg" sourceRef="ldap_error1" targetRef="get_emails_from_agent_in_ldap_and_notify_ou_ldap_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_pT-WEeeybe21XcWwfg" sourceRef="radweriel_error8" targetRef="copy_folder_with_files_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_pz-WEeeybe21XcWwfg" sourceRef="cc_fc_qol_radweriel_error" targetRef="email_notification_of_president_and_agents_for_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_zBO_qT-WEeeybe21XcWwfg" sourceRef="email_notification_of_president_and_agents_for_radweriel_error" targetRef="terminate_due_2_radweriel_error">
+      <model:documentation></model:documentation>
+    </model:sequenceFlow>
+    <model:dataObject id="agents_email" name="agents_email" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="alfresco_host" name="alfresco_host" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="approval" name="&#x3b1;pproval" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="attached_files_folder_has_children" name="attached_files_folder_has_children" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="day" name="day" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="day_name_exist" name="day_name_exist" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="folder_2_be_copied" name="folder_2_be_copied" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="folder_name" name="folder_name" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="folder_name_exist" name="folder_name_exist" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="initiator_email" name="initiator_email" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="instance_url" name="instance_url" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="month" name="month" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="month_name_exist" name="month_name_exist" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="number_of_children" name="number_of_children" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="number_of_children_of_copied_object" name="number_of_children_of_copied_object" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="ou_mail" name="ou_mail" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="ou_site" name="ou_site" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="ou_site_title" name="ou_site_title" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="protocol_number" name="protocol_number" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="source_site" name="source_site" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="source_site_title" name="source_site_title" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="status" name="status" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="subroutine_error_event" name="subroutine_error_event" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="temp_folder_name" name="temp_folder_name" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="temporary_folder_name" name="temporary_folder_name" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="theme" name="&#x3b8;&#x3ad;&#x3bc;&#x3b1;" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="year" name="year" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+    <model:dataObject id="year_name_exist" name="year_name_exist" isCollection="false">
+      <model:documentation></model:documentation>
+    </model:dataObject>
+  </model:process>
+  <di:BPMNDiagram name="ddt_automations">
+    <di:BPMNPlane id="plane_ddt_automations" bpmnElement="ddt_automations">
+      <di:BPMNShape id="_zBO_tz-WEeeybe21XcWwfg" bpmnElement="ddt_automations" isHorizontal="true">
+        <dc:Bounds height="1638.0" width="3513.0" x="30.0" y="30.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_uj-WEeeybe21XcWwfg" bpmnElement="Start1">
+        <dc:Bounds height="34.0" width="30.0" x="70.0" y="95.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_vj-WEeeybe21XcWwfg" bpmnElement="check_month_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="1112.0" y="229.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_wj-WEeeybe21XcWwfg" bpmnElement="check_month_folder_in_year_of_given_folder">
+        <dc:Bounds height="70.0" width="140.0" x="958.0" y="323.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_xD-WEeeybe21XcWwfg" bpmnElement="radweriel_error5">
+        <dc:Bounds height="25.0" width="25.0" x="1045.0" y="306.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_yT-WEeeybe21XcWwfg" bpmnElement="check_year_folder_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="796.0" y="218.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_zT-WEeeybe21XcWwfg" bpmnElement="create_from_month_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="1299.0" y="912.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_0T-WEeeybe21XcWwfg" bpmnElement="check_given_folder">
+        <dc:Bounds height="60.0" width="120.0" x="357.0" y="334.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_0z-WEeeybe21XcWwfg" bpmnElement="radweriel_error1">
+        <dc:Bounds height="25.0" width="25.0" x="369.0" y="386.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_2D-WEeeybe21XcWwfg" bpmnElement="check_year_folder_in_given_folder">
+        <dc:Bounds height="70.0" width="140.0" x="651.0" y="329.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_2j-WEeeybe21XcWwfg" bpmnElement="radweriel_error3">
+        <dc:Bounds height="25.0" width="25.0" x="738.0" y="312.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBO_3z-WEeeybe21XcWwfg" bpmnElement="creation_of_month_day_folder">
+        <dc:Bounds height="70.0" width="140.0" x="1097.0" y="826.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmcD-WEeeybe21XcWwfg" bpmnElement="radweriel_error6">
+        <dc:Bounds height="25.0" width="25.0" x="1135.0" y="888.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmdT-WEeeybe21XcWwfg" bpmnElement="check_initial_folder_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="263.0" y="406.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmeT-WEeeybe21XcWwfg" bpmnElement="creation_of_folders_given_folder_year_month_day">
+        <dc:Bounds height="90.0" width="180.0" x="467.0" y="1038.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmez-WEeeybe21XcWwfg" bpmnElement="radweriel_error2">
+        <dc:Bounds height="25.0" width="25.0" x="505.0" y="1120.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmgD-WEeeybe21XcWwfg" bpmnElement="creation_of_folders_year_month_day_in_given_folder">
+        <dc:Bounds height="70.0" width="140.0" x="762.0" y="942.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmgj-WEeeybe21XcWwfg" bpmnElement="radweriel_error4">
+        <dc:Bounds height="25.0" width="25.0" x="800.0" y="1004.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmhz-WEeeybe21XcWwfg" bpmnElement="create_all_folders_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="651.0" y="1155.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmiz-WEeeybe21XcWwfg" bpmnElement="create_from_year_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="966.0" y="1027.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmjz-WEeeybe21XcWwfg" bpmnElement="Terminate_End_Event1">
+        <dc:Bounds height="34.0" width="30.0" x="3275.0" y="387.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmkz-WEeeybe21XcWwfg" bpmnElement="radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="924.0" y="1254.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmlz-WEeeybe21XcWwfg" bpmnElement="visual_radweriel_error">
+        <dc:Bounds height="60.0" width="120.0" x="1071.0" y="1241.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmmj-WEeeybe21XcWwfg" bpmnElement="terminate_due_2_radweriel_error">
+        <dc:Bounds height="34.0" width="30.0" x="1324.0" y="1254.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmnj-WEeeybe21XcWwfg" bpmnElement="check_initial_folder_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="515.0" y="412.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmoj-WEeeybe21XcWwfg" bpmnElement="check_year_folder_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="791.0" y="481.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmpj-WEeeybe21XcWwfg" bpmnElement="check_month_folder_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="1135.0" y="446.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmqj-WEeeybe21XcWwfg" bpmnElement="cc_fc_lfc_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="1789.0" y="489.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmrj-WEeeybe21XcWwfg" bpmnElement="move_temporary_folder_in_rejected_files">
+        <dc:Bounds height="75.0" width="150.0" x="2531.0" y="1139.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmsD-WEeeybe21XcWwfg" bpmnElement="radweriel_error7">
+        <dc:Bounds height="25.0" width="25.0" x="2556.0" y="1206.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmtT-WEeeybe21XcWwfg" bpmnElement="move_temporary_folder_in_rejected_files_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="2755.0" y="1261.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmuT-WEeeybe21XcWwfg" bpmnElement="Terminate_End_Event2">
+        <dc:Bounds height="34.0" width="30.0" x="2951.0" y="1164.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmvT-WEeeybe21XcWwfg" bpmnElement="get_emails_from_agent_in_ldap_and_notify_ou">
+        <dc:Bounds height="70.0" width="140.0" x="3220.0" y="636.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmvz-WEeeybe21XcWwfg" bpmnElement="ldap_error1">
+        <dc:Bounds height="25.0" width="25.0" x="3243.0" y="698.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmxD-WEeeybe21XcWwfg" bpmnElement="LDAP_error">
+        <dc:Bounds height="34.0" width="34.0" x="924.0" y="1131.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmyD-WEeeybe21XcWwfg" bpmnElement="terminate_due_2_ldap_error">
+        <dc:Bounds height="34.0" width="30.0" x="1332.0" y="1131.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmzD-WEeeybe21XcWwfg" bpmnElement="visual_ldap_error">
+        <dc:Bounds height="50.0" width="100.0" x="1078.0" y="1123.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPmzz-WEeeybe21XcWwfg" bpmnElement="get_emails_from_agent_in_ldap_and_notify_ou_ldap_error">
+        <dc:Bounds height="34.0" width="34.0" x="3431.0" y="740.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPm0z-WEeeybe21XcWwfg" bpmnElement="emails_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="3002.0" y="474.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPm1z-WEeeybe21XcWwfg" bpmnElement="Copy_folder_with_files">
+        <dc:Bounds height="76.0" width="152.0" x="2763.0" y="143.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPm2T-WEeeybe21XcWwfg" bpmnElement="radweriel_error8">
+        <dc:Bounds height="25.0" width="25.0" x="2907.0" y="187.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBPm3j-WEeeybe21XcWwfg" bpmnElement="copy_folder_with_files_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="3092.0" y="183.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNgT-WEeeybe21XcWwfg" bpmnElement="rename_copied_folder_with_protocol_number">
+        <dc:Bounds height="70.0" width="140.0" x="2812.0" y="581.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNgz-WEeeybe21XcWwfg" bpmnElement="radweriel_error10">
+        <dc:Bounds height="25.0" width="25.0" x="2820.0" y="643.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNiD-WEeeybe21XcWwfg" bpmnElement="rename_copied_folder_with_protocol_number_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="2856.0" y="713.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNjD-WEeeybe21XcWwfg" bpmnElement="count_object_2_be_copied_children">
+        <dc:Bounds height="70.0" width="140.0" x="2536.0" y="143.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNjj-WEeeybe21XcWwfg" bpmnElement="radweriel_error11">
+        <dc:Bounds height="25.0" width="25.0" x="2643.0" y="126.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNkz-WEeeybe21XcWwfg" bpmnElement="count_object_2_be_copied_children_radweriel_error12">
+        <dc:Bounds height="34.0" width="34.0" x="2754.0" y="53.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNlz-WEeeybe21XcWwfg" bpmnElement="evaluate_number_of_children_of_copied_object">
+        <dc:Bounds height="70.0" width="140.0" x="2563.0" y="333.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNmT-WEeeybe21XcWwfg" bpmnElement="radweriel_error12">
+        <dc:Bounds height="25.0" width="25.0" x="2658.0" y="316.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNnj-WEeeybe21XcWwfg" bpmnElement="evaluate_number_of_children_of_copied_object_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="2839.0" y="312.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNoj-WEeeybe21XcWwfg" bpmnElement="recipients_and_notifications_create_case_folder">
+        <dc:Bounds height="80.0" width="160.0" x="2643.0" y="922.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNpD-WEeeybe21XcWwfg" bpmnElement="radweriel_error13">
+        <dc:Bounds height="25.0" width="25.0" x="2770.0" y="994.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNqT-WEeeybe21XcWwfg" bpmnElement="recipients_and_notifications_create_case_folder_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="2961.0" y="1026.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNrT-WEeeybe21XcWwfg" bpmnElement="check_day_folder_in_month_folder">
+        <dc:Bounds height="70.0" width="140.0" x="1416.0" y="342.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNrz-WEeeybe21XcWwfg" bpmnElement="radweriel_error14">
+        <dc:Bounds height="25.0" width="25.0" x="1460.0" y="325.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNtD-WEeeybe21XcWwfg" bpmnElement="check_day_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="1616.0" y="251.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNuD-WEeeybe21XcWwfg" bpmnElement="check_day_folder_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="1451.0" y="469.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNvD-WEeeybe21XcWwfg" bpmnElement="creation_of_day_folder">
+        <dc:Bounds height="70.0" width="140.0" x="1406.0" y="671.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNvj-WEeeybe21XcWwfg" bpmnElement="radweriel_error15">
+        <dc:Bounds height="25.0" width="25.0" x="1414.0" y="733.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNwz-WEeeybe21XcWwfg" bpmnElement="create_from_day_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="1531.0" y="792.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNxz-WEeeybe21XcWwfg" bpmnElement="automations">
+        <dc:Bounds height="70.0" width="140.0" x="357.0" y="222.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNyj-WEeeybe21XcWwfg" bpmnElement="aggregation_initial_folder_year_month_folder_gateway">
+        <dc:Bounds height="43.0" width="43.0" x="2078.0" y="488.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQNzj-WEeeybe21XcWwfg" bpmnElement="move_folder_2_approved_cases_cc_fc_qol">
+        <dc:Bounds height="60.0" width="120.0" x="1914.0" y="1294.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN0D-WEeeybe21XcWwfg" bpmnElement="radweriel_error16">
+        <dc:Bounds height="25.0" width="25.0" x="1934.0" y="1346.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN1T-WEeeybe21XcWwfg" bpmnElement="Terminate_End_Event3">
+        <dc:Bounds height="34.0" width="30.0" x="2193.0" y="1316.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN2T-WEeeybe21XcWwfg" bpmnElement="move_folder_2_approved_cases_cc_fc_qol_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="2068.0" y="1384.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN3T-WEeeybe21XcWwfg" bpmnElement="attached_files_folder_has_children">
+        <dc:Bounds height="43.0" width="43.0" x="2994.0" y="929.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN4T-WEeeybe21XcWwfg" bpmnElement="create_link_2_attached_files_folder">
+        <dc:Bounds height="60.0" width="120.0" x="3146.0" y="926.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN4z-WEeeybe21XcWwfg" bpmnElement="radweriel_error17">
+        <dc:Bounds height="25.0" width="25.0" x="3166.0" y="978.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN6D-WEeeybe21XcWwfg" bpmnElement="create_link_2_attached_files_folder_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="3377.0" y="1029.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN7D-WEeeybe21XcWwfg" bpmnElement="cc_fc_qol_radweriel_error">
+        <dc:Bounds height="34.0" width="34.0" x="924.0" y="1371.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_zBQN8D-WEeeybe21XcWwfg" bpmnElement="email_notification_of_president_and_agents_for_radweriel_error">
+        <dc:Bounds height="70.0" width="140.0" x="1061.0" y="1358.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_zBQ0lD-WEeeybe21XcWwfg" bpmnElement="_zBOYuD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1098.0" y="363.0"/>
+        <di_1:waypoint x="1156.0" y="363.0"/>
+        <di_1:waypoint x="1156.0" y="446.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0nT-WEeeybe21XcWwfg" bpmnElement="_zBOYuj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1156.0" y="489.0"/>
+        <di_1:waypoint x="1156.0" y="826.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0pj-WEeeybe21XcWwfg" bpmnElement="_zBOYvD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="536.0" y="455.0"/>
+        <di_1:waypoint x="536.0" y="1038.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0rj-WEeeybe21XcWwfg" bpmnElement="_zBOYvj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="477.0" y="365.0"/>
+        <di_1:waypoint x="501.0" y="365.0"/>
+        <di_1:waypoint x="501.0" y="433.0"/>
+        <di_1:waypoint x="515.0" y="433.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0tj-WEeeybe21XcWwfg" bpmnElement="_zBOYwD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="812.0" y="524.0"/>
+        <di_1:waypoint x="812.0" y="942.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0vz-WEeeybe21XcWwfg" bpmnElement="_zBOYwj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="731.0" y="399.0"/>
+        <di_1:waypoint x="731.0" y="502.0"/>
+        <di_1:waypoint x="791.0" y="502.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0yD-WEeeybe21XcWwfg" bpmnElement="_zBOYxD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1237.0" y="866.0"/>
+        <di_1:waypoint x="1710.0" y="866.0"/>
+        <di_1:waypoint x="1710.0" y="516.0"/>
+        <di_1:waypoint x="1794.0" y="516.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ00T-WEeeybe21XcWwfg" bpmnElement="_zBOYxj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="647.0" y="1091.0"/>
+        <di_1:waypoint x="1810.0" y="1091.0"/>
+        <di_1:waypoint x="1810.0" y="532.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ02T-WEeeybe21XcWwfg" bpmnElement="_zBOYyD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="902.0" y="991.0"/>
+        <di_1:waypoint x="1801.0" y="991.0"/>
+        <di_1:waypoint x="1801.0" y="522.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ04j-WEeeybe21XcWwfg" bpmnElement="_zBOYyj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1060.0" y="306.0"/>
+        <di_1:waypoint x="1060.0" y="245.0"/>
+        <di_1:waypoint x="1112.0" y="245.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ06T-WEeeybe21XcWwfg" bpmnElement="_zBOYzD-WEeeybe21XcWwfg">
+        <di_1:waypoint x="376.0" y="411.0"/>
+        <di_1:waypoint x="376.0" y="439.0"/>
+        <di_1:waypoint x="297.0" y="439.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ08D-WEeeybe21XcWwfg" bpmnElement="_zBOYzj-WEeeybe21XcWwfg">
+        <di_1:waypoint x="752.0" y="312.0"/>
+        <di_1:waypoint x="752.0" y="239.0"/>
+        <di_1:waypoint x="796.0" y="239.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0-D-WEeeybe21XcWwfg" bpmnElement="_zBOY0D-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1141.0" y="913.0"/>
+        <di_1:waypoint x="1141.0" y="931.0"/>
+        <di_1:waypoint x="1299.0" y="931.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ0_z-WEeeybe21XcWwfg" bpmnElement="_zBOY0j-WEeeybe21XcWwfg">
+        <di_1:waypoint x="517.0" y="1145.0"/>
+        <di_1:waypoint x="517.0" y="1169.0"/>
+        <di_1:waypoint x="651.0" y="1169.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ1Bj-WEeeybe21XcWwfg" bpmnElement="_zBOY1D-WEeeybe21XcWwfg">
+        <di_1:waypoint x="806.0" y="1029.0"/>
+        <di_1:waypoint x="806.0" y="1053.0"/>
+        <di_1:waypoint x="966.0" y="1053.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ1DT-WEeeybe21XcWwfg" bpmnElement="_zBOY1j-WEeeybe21XcWwfg">
+        <di_1:waypoint x="100.0" y="115.0"/>
+        <di_1:waypoint x="421.0" y="115.0"/>
+        <di_1:waypoint x="421.0" y="222.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ1FT-WEeeybe21XcWwfg" bpmnElement="_zBOY2D-WEeeybe21XcWwfg">
+        <di_1:waypoint x="958.0" y="1270.0"/>
+        <di_1:waypoint x="1071.0" y="1270.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ1HT-WEeeybe21XcWwfg" bpmnElement="_zBOY2j-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1191.0" y="1271.0"/>
+        <di_1:waypoint x="1324.0" y="1271.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBQ1JD-WEeeybe21XcWwfg" bpmnElement="_zBOY3D-WEeeybe21XcWwfg">
+        <di_1:waypoint x="558.0" y="433.0"/>
+        <di_1:waypoint x="600.0" y="433.0"/>
+        <di_1:waypoint x="600.0" y="363.0"/>
+        <di_1:waypoint x="651.0" y="363.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRbqD-WEeeybe21XcWwfg" bpmnElement="_zBOY3j-WEeeybe21XcWwfg">
+        <di_1:waypoint x="834.0" y="502.0"/>
+        <di_1:waypoint x="852.0" y="502.0"/>
+        <di_1:waypoint x="852.0" y="357.0"/>
+        <di_1:waypoint x="958.0" y="357.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRbsT-WEeeybe21XcWwfg" bpmnElement="_zBOY4D-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1178.0" y="467.0"/>
+        <di_1:waypoint x="1280.0" y="467.0"/>
+        <di_1:waypoint x="1280.0" y="377.0"/>
+        <di_1:waypoint x="1416.0" y="377.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRbuj-WEeeybe21XcWwfg" bpmnElement="_zBOY4j-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3045.0" y="495.0"/>
+        <di_1:waypoint x="3118.0" y="495.0"/>
+        <di_1:waypoint x="3118.0" y="677.0"/>
+        <di_1:waypoint x="3220.0" y="677.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRbwT-WEeeybe21XcWwfg" bpmnElement="_zBO_YT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2098.0" y="489.0"/>
+        <di_1:waypoint x="2098.0" y="180.0"/>
+        <di_1:waypoint x="2536.0" y="180.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRbyT-WEeeybe21XcWwfg" bpmnElement="_zBO_Yz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2098.0" y="529.0"/>
+        <di_1:waypoint x="2098.0" y="1181.0"/>
+        <di_1:waypoint x="2531.0" y="1181.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb0T-WEeeybe21XcWwfg" bpmnElement="_zBO_ZT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2681.0" y="1180.0"/>
+        <di_1:waypoint x="2951.0" y="1180.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb2D-WEeeybe21XcWwfg" bpmnElement="_zBO_Zz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3289.0" y="636.0"/>
+        <di_1:waypoint x="3289.0" y="421.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb4D-WEeeybe21XcWwfg" bpmnElement="_zBO_aT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="958.0" y="1151.0"/>
+        <di_1:waypoint x="1078.0" y="1151.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb6T-WEeeybe21XcWwfg" bpmnElement="_zBO_az-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1178.0" y="1148.0"/>
+        <di_1:waypoint x="1332.0" y="1148.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb8D-WEeeybe21XcWwfg" bpmnElement="_zBO_bT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3023.0" y="474.0"/>
+        <di_1:waypoint x="3023.0" y="403.0"/>
+        <di_1:waypoint x="3275.0" y="403.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRb-T-WEeeybe21XcWwfg" bpmnElement="_zBO_bz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2845.0" y="219.0"/>
+        <di_1:waypoint x="2845.0" y="276.0"/>
+        <di_1:waypoint x="2605.0" y="276.0"/>
+        <di_1:waypoint x="2605.0" y="333.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcAj-WEeeybe21XcWwfg" bpmnElement="_zBO_cT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2952.0" y="620.0"/>
+        <di_1:waypoint x="2970.0" y="620.0"/>
+        <di_1:waypoint x="2970.0" y="495.0"/>
+        <di_1:waypoint x="3002.0" y="495.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcCz-WEeeybe21XcWwfg" bpmnElement="_zBO_cz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2829.0" y="668.0"/>
+        <di_1:waypoint x="2829.0" y="729.0"/>
+        <di_1:waypoint x="2856.0" y="729.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcEj-WEeeybe21XcWwfg" bpmnElement="_zBO_dT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2658.0" y="126.0"/>
+        <di_1:waypoint x="2658.0" y="76.0"/>
+        <di_1:waypoint x="2754.0" y="76.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcGT-WEeeybe21XcWwfg" bpmnElement="_zBO_dz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2676.0" y="177.0"/>
+        <di_1:waypoint x="2763.0" y="177.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcIj-WEeeybe21XcWwfg" bpmnElement="_zBO_eT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2633.0" y="403.0"/>
+        <di_1:waypoint x="2633.0" y="616.0"/>
+        <di_1:waypoint x="2812.0" y="616.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcKj-WEeeybe21XcWwfg" bpmnElement="_zBO_ez-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2683.0" y="328.0"/>
+        <di_1:waypoint x="2839.0" y="328.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBRcMT-WEeeybe21XcWwfg" bpmnElement="_zBO_fT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2119.0" y="508.0"/>
+        <di_1:waypoint x="2488.0" y="508.0"/>
+        <di_1:waypoint x="2488.0" y="957.0"/>
+        <di_1:waypoint x="2643.0" y="957.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSCtz-WEeeybe21XcWwfg" bpmnElement="_zBO_fz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2781.0" y="1019.0"/>
+        <di_1:waypoint x="2781.0" y="1044.0"/>
+        <di_1:waypoint x="2961.0" y="1044.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSCvj-WEeeybe21XcWwfg" bpmnElement="_zBO_gT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1475.0" y="325.0"/>
+        <di_1:waypoint x="1475.0" y="267.0"/>
+        <di_1:waypoint x="1616.0" y="267.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSCxT-WEeeybe21XcWwfg" bpmnElement="_zBO_gz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1472.0" y="412.0"/>
+        <di_1:waypoint x="1472.0" y="469.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSCzT-WEeeybe21XcWwfg" bpmnElement="_zBO_hT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1494.0" y="490.0"/>
+        <di_1:waypoint x="1572.0" y="490.0"/>
+        <di_1:waypoint x="1572.0" y="422.0"/>
+        <di_1:waypoint x="1810.0" y="422.0"/>
+        <di_1:waypoint x="1810.0" y="489.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC1T-WEeeybe21XcWwfg" bpmnElement="_zBO_hz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1427.0" y="758.0"/>
+        <di_1:waypoint x="1427.0" y="808.0"/>
+        <di_1:waypoint x="1531.0" y="808.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC3D-WEeeybe21XcWwfg" bpmnElement="_zBO_iT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1472.0" y="512.0"/>
+        <di_1:waypoint x="1472.0" y="671.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC5D-WEeeybe21XcWwfg" bpmnElement="_zBO_iz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2803.0" y="951.0"/>
+        <di_1:waypoint x="2994.0" y="951.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC7T-WEeeybe21XcWwfg" bpmnElement="_zBO_jT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1546.0" y="706.0"/>
+        <di_1:waypoint x="1616.0" y="706.0"/>
+        <di_1:waypoint x="1616.0" y="502.0"/>
+        <di_1:waypoint x="1797.0" y="502.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC9j-WEeeybe21XcWwfg" bpmnElement="_zBO_jz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="426.0" y="292.0"/>
+        <di_1:waypoint x="426.0" y="334.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSC_z-WEeeybe21XcWwfg" bpmnElement="_zBO_kT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1830.0" y="509.0"/>
+        <di_1:waypoint x="2078.0" y="509.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDCD-WEeeybe21XcWwfg" bpmnElement="_zBO_kz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1819.0" y="523.0"/>
+        <di_1:waypoint x="1940.0" y="523.0"/>
+        <di_1:waypoint x="1940.0" y="1294.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDED-WEeeybe21XcWwfg" bpmnElement="_zBO_lT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2034.0" y="1328.0"/>
+        <di_1:waypoint x="2193.0" y="1328.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDFz-WEeeybe21XcWwfg" bpmnElement="_zBO_lz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1946.0" y="1371.0"/>
+        <di_1:waypoint x="1946.0" y="1400.0"/>
+        <di_1:waypoint x="2068.0" y="1400.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDHj-WEeeybe21XcWwfg" bpmnElement="_zBO_mT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3015.0" y="929.0"/>
+        <di_1:waypoint x="3015.0" y="508.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDJj-WEeeybe21XcWwfg" bpmnElement="_zBO_mz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3037.0" y="950.0"/>
+        <di_1:waypoint x="3146.0" y="950.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDLz-WEeeybe21XcWwfg" bpmnElement="_zBO_nT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3198.0" y="926.0"/>
+        <di_1:waypoint x="3198.0" y="717.0"/>
+        <di_1:waypoint x="3034.0" y="717.0"/>
+        <di_1:waypoint x="3034.0" y="506.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDNz-WEeeybe21XcWwfg" bpmnElement="_zBO_nz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3178.0" y="1003.0"/>
+        <di_1:waypoint x="3178.0" y="1042.0"/>
+        <di_1:waypoint x="3377.0" y="1042.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDPj-WEeeybe21XcWwfg" bpmnElement="_zBO_oT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2570.0" y="1231.0"/>
+        <di_1:waypoint x="2570.0" y="1273.0"/>
+        <di_1:waypoint x="2755.0" y="1273.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSDRj-WEeeybe21XcWwfg" bpmnElement="_zBO_oz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="3253.0" y="723.0"/>
+        <di_1:waypoint x="3253.0" y="762.0"/>
+        <di_1:waypoint x="3431.0" y="762.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSpyD-WEeeybe21XcWwfg" bpmnElement="_zBO_pT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="2932.0" y="199.0"/>
+        <di_1:waypoint x="3092.0" y="199.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSp0D-WEeeybe21XcWwfg" bpmnElement="_zBO_pz-WEeeybe21XcWwfg">
+        <di_1:waypoint x="958.0" y="1387.0"/>
+        <di_1:waypoint x="1061.0" y="1387.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_zBSp2D-WEeeybe21XcWwfg" bpmnElement="_zBO_qT-WEeeybe21XcWwfg">
+        <di_1:waypoint x="1201.0" y="1387.0"/>
+        <di_1:waypoint x="1338.0" y="1387.0"/>
+        <di_1:waypoint x="1338.0" y="1288.0"/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+  </di:BPMNDiagram>
+</model:definitions>

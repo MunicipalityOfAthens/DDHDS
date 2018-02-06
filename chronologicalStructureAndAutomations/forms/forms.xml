@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<forms-definition product-version="5.9">
+  <migration-product-version>5.9</migration-product-version>
+  <application name="ddt_automations" version="1.0">
+    <permissions>process#ddt_automations--1.0</permissions>
+    <application-label>ddt_automations</application-label>
+    <mandatory-symbol>*</mandatory-symbol>
+    <forms>
+      <form id="ddt_automations--1.0$entry">
+        <form-type>entry</form-type>
+        <permissions>process#ddt_automations--1.0</permissions>
+      </form>
+      <form first-page="E_G_radweriel_error_cfym" id="ddt_automations--1.0--visual_radweriel_error$entry">
+        <form-type>entry</form-type>
+        <permissions>activity#ddt_automations--1.0--visual_radweriel_error</permissions>
+        <pages>
+          <page id="E_G_radweriel_error_cfym">
+            <page-label>Λάθος σε υποσύστημα Η/Δ - radweriel</page-label>
+            <allow-html-in-label>false</allow-html-in-label>
+            <page-layout>html/visual_radweriel_error_E_G_radweriel_error_cfym.html</page-layout>
+            <widgets>
+              <widget id="eg_radweriel_error_widget" type="MESSAGE">
+                <initial-value>
+                  <expression>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server αποθήκευσης των αρχείων 'Radweriel' στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;&#13;Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;&#13;Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.&#13;&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</expression>
+                </initial-value>
+                <allow-html-in-field>true</allow-html-in-field>
+                <variable-bound>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server αποθήκευσης των αρχείων 'Radweriel' στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;&#13;Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;&#13;Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.&#13;&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</variable-bound>
+              </widget>
+              <widget id="goto_terminate_radweriel_error" type="BUTTON_SUBMIT">
+                <label-button>false</label-button>
+                <label>Εντάξει</label>
+                <allow-html-in-label>false</allow-html-in-label>
+                <label-position>LEFT</label-position>
+                <display-condition>1==2</display-condition>
+              </widget>
+            </widgets>
+          </page>
+        </pages>
+      </form>
+      <form first-page="E_G_ldap_error_cfym" id="ddt_automations--1.0--visual_ldap_error$entry">
+        <form-type>entry</form-type>
+        <permissions>activity#ddt_automations--1.0--visual_ldap_error</permissions>
+        <pages>
+          <page id="E_G_ldap_error_cfym">
+            <page-label>Λάθος σε υποσύστημα Η/Δ - LDAP</page-label>
+            <allow-html-in-label>false</allow-html-in-label>
+            <page-layout>html/visual_ldap_error_E_G_ldap_error_cfym.html</page-layout>
+            <widgets>
+              <widget id="eg_ldap_error_widget" type="MESSAGE">
+                <initial-value>
+                  <expression>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server διαχείρισης χρηστών LDAP στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;
+Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;
+Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.
+&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</expression>
+                </initial-value>
+                <allow-html-in-field>true</allow-html-in-field>
+                <variable-bound>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server διαχείρισης χρηστών LDAP στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;
+Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;
+Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.
+&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</variable-bound>
+              </widget>
+              <widget id="goto_terminate_ldap_error" type="BUTTON_SUBMIT">
+                <label-button>false</label-button>
+                <label>Εντάξει</label>
+                <allow-html-in-label>false</allow-html-in-label>
+                <label-position>LEFT</label-position>
+                <display-condition>1==2</display-condition>
+              </widget>
+            </widgets>
+          </page>
+        </pages>
+      </form>
+      <form first-page="cc_fc_qol_E_G_radweriel_error_cfym" id="ddt_automations--1.0--email_notification_of_president_and_agents_for_radweriel_error$entry">
+        <form-type>entry</form-type>
+        <permissions>activity#ddt_automations--1.0--email_notification_of_president_and_agents_for_radweriel_error</permissions>
+        <pages>
+          <page id="cc_fc_qol_E_G_radweriel_error_cfym">
+            <page-label>Λάθος σε υποσύστημα Η/Δ - radweriel</page-label>
+            <allow-html-in-label>false</allow-html-in-label>
+            <page-layout>html/email_notification_of_president_and_agents_for_radweriel_error_cc_fc_qol_E_G_radweriel_error_cfym.html</page-layout>
+            <widgets>
+              <widget id="eg_radweriel_error_widget" type="MESSAGE">
+                <initial-value>
+                  <expression>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server αποθήκευσης των αρχείων 'Radweriel' στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;&#13;Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;&#13;Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.&#13;&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</expression>
+                </initial-value>
+                <allow-html-in-field>true</allow-html-in-field>
+                <variable-bound>&lt;font size="3"&gt;&lt;b&gt;Απρόσμενο λάθος στον Server αποθήκευσης των αρχείων 'Radweriel' στην υπόθεση ${processInstance.getParentInstanceUUID().toString()}&lt;br&gt;&lt;br&gt;&#13;Παρακαλώ μην προχωρήσετε παρακάτω.&lt;br&gt;&lt;br&gt;&#13;Ενημερώστε τον Διαχειριστή Η/Δ στην "Διεύθυνση Επιχειρησιακού Σχεδιασμού, Οργάνωσης &amp; Πληροφορικής" για την επίλυση του προβλήματος.&#13;&lt;/b&gt;&lt;/font&gt;
+&lt;meta http-equiv="refresh" content="86415"&gt;</variable-bound>
+              </widget>
+              <widget id="goto_terminate_cc_fc_qol_radweriel_error" type="BUTTON_SUBMIT">
+                <label-button>false</label-button>
+                <label>Εντάξει</label>
+                <allow-html-in-label>false</allow-html-in-label>
+                <label-position>LEFT</label-position>
+                <display-condition>1==2</display-condition>
+              </widget>
+            </widgets>
+          </page>
+        </pages>
+      </form>
+    </forms>
+  </application>
+</forms-definition>

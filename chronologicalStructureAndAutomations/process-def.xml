@@ -1,0 +1,2737 @@
+<?xml version="1.0" encoding="UTF-8"?><process-definition product-version="5.9">
+  <process name="ddt_automations" version="1.0">
+    <label>ddt_automations</label>
+    <description/>
+    <type>PROCESS</type>
+    <participants>
+      <participant name="error_viewer">
+        <label>error_viewer</label>
+        <description/>
+        <role-mapper>
+          <classname>org.bonitasoft.connectors.bonita.resolvers.UserListRoleResolver</classname>
+          <parameters>
+            <parameter name="setUsers">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ADYke2luaXRpYXRv
+cl9lbWFpbC5zcGxpdCgiQGF0aCIpWzBdLnRvU3RyaW5nKCkudHJpbSgpO30=</parameter>
+          </parameters>
+        </role-mapper>
+      </participant>
+    </participants>
+    <data-fields>
+      <data-field name="folder_2_be_copied">
+        <label>folder_2_be_copied</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="source_site_title">
+        <label>source_site_title</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="alfresco_host">
+        <label>alfresco_host</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="attached_files_folder_has_children">
+        <label>attached_files_folder_has_children</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Boolean</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="ou_site_title">
+        <label>ou_site_title</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="initiator_email">
+        <label>initiator_email</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="year">
+        <label>year</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="ou_site">
+        <label>ou_site</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="number_of_children_of_copied_object">
+        <label>number_of_children_of_copied_object</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Long</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="status">
+        <label>status</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="number_of_children">
+        <label>number_of_children</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Long</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="approval">
+        <label>αpproval</label>
+        <value>rO0ABXNyAA5qYXZhLmxhbmcuTG9uZzuL5JDMjyPfAgABSgAFdmFsdWV4cgAQamF2YS5sYW5nLk51
+bWJlcoaslR0LlOCLAgAAeHAAAAAAAAAAAA==</value>
+        <description/>
+        <datatype-classname>java.lang.Long</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="folder_name_exist">
+        <label>folder_name_exist</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Boolean</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="theme">
+        <label>θέμα</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="source_site">
+        <label>source_site</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="instance_url">
+        <label>instance_url</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="subroutine_error_event">
+        <label>subroutine_error_event</label>
+        <value>rO0ABXQABWZhbHNl</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="day">
+        <label>day</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="day_name_exist">
+        <label>day_name_exist</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Boolean</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="agents_email">
+        <label>agents_email</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="year_name_exist">
+        <label>year_name_exist</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Boolean</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="protocol_number">
+        <label>protocol_number</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="temp_folder_name">
+        <label>temp_folder_name</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="temporary_folder_name">
+        <label>temporary_folder_name</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="folder_name">
+        <label>folder_name</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="month">
+        <label>month</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="month_name_exist">
+        <label>month_name_exist</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.Boolean</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+      <data-field name="ou_mail">
+        <label>ou_mail</label>
+        <value>rO0ABXA=</value>
+        <description/>
+        <datatype-classname>java.lang.String</datatype-classname>
+        <is-transient>false</is-transient>
+        <enumeration-values/>
+      </data-field>
+    </data-fields>
+    <attachments/>
+    <activities>
+      <activity name="check_year_folder_in_given_folder">
+        <label>Έλεγχος Φακέλου "Έτους" στον Αρχικό Φάκελο</label>
+        <description>Ελέγχει αν υπάρχει ο φάκελος με το όνομα του τρέχοντος "Ετους" μέσα στο φάκελο που δίνεται από την αρχική ροή</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>TestGivenTitleInAlfFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setPath">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AH8ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0iLCAiVVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcv
+Jyl9</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setName_2_check">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="year_name_exist">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke2ZvbGRlcl9m
+b3VuZH0=</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error3">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="terminate_due_2_radweriel_error">
+        <label>Τερματισμός λόγω λάθους σε Radweriel</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>true</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="recipients_and_notifications_create_case_folder">
+        <label>Δημιουργία Φακέλου Υπόθεσης στους παραλήπτες</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJgke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vIiwgIlVURi04IikucmVwbGFjZUFsbCgnXFwrJywn
+JTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AFokeyLOkc+Azr/P
+g8+Ezr/Ou86tzrHPgiAtICIrc291cmNlX3NpdGVfdGl0bGUudHJpbSgpLnJlcGxhY2VBbGwoIlte
+XFxwe0x9XFxwe05kfV0rIiwgIiAiKX0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ADQke3RoZW1lLnRy
+aW0oKS5yZXBsYWNlQWxsKCJbXlxccHtMfVxccHtOZH1dKyIsICIgIil9</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AEoke3Byb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgi
+XyIpWzFdfQ==</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AOIke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vJHtwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVsw
+XSsiICIrIi0iKyIgIitwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVsxXX0iLCAiVVRGLTgiKS5y
+ZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyl9</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ACHOkc66z4HOuc6y
+zq3PgiDOkc69z4TOr86zz4HOsc+Gzr8=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ACHOkc66z4HOuc6y
+zq3PgiDOkc69z4TOr86zz4HOsc+Gzr8=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ACHOkc66z4HOuc6y
+zq3PgiDOkc69z4TOr86zz4HOsc+Gzr8=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>Linkobject</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setSource_object">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0Am0ke2ltcG9ydCBq
+YXZhLm5ldC5VUkxFbmNvZGVyOw0NaWYocHJvY2Vzc0luc3RhbmNlLmdldFBhcmVudEluc3RhbmNl
+VVVJRCgpLnRvU3RyaW5nKCkuY29udGFpbnMoIjJfdXBsb2FkIik9PXRydWUpDXJldHVybiBVUkxF
+bmNvZGVyLmVuY29kZSgiL3Rlc3Rkb2N1bWVudHMvIit5ZWFyKyIvIittb250aCsiLyIrZGF5KyIv
+Iitwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVswXSsiICIrIi0iKyIgIitwcm90b2NvbF9udW1i
+ZXIuc3BsaXQoIl8iKVsxXSsiL86RzrrPgc65zrLOrc+CIM6Rzr3PhM6vzrPPgc6xz4bOvy8iLCAi
+VVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyk7DWVs
+c2UgcmV0dXJuIFVSTEVuY29kZXIuZW5jb2RlKCIvzojOs86zz4HOsc+GzrEgzpTOrs68zr/PhSDO
+kc64zrfOvc6xzq/Pic69LyIreWVhcisiLyIrbW9udGgrIi8iK2RheSsiLyIrcHJvdG9jb2xfbnVt
+YmVyLnNwbGl0KCJfIilbMF0rIiAiKyItIisiICIrcHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilb
+MV0rIi/Okc66z4HOuc6yzq3PgiDOkc69z4TOr86zz4HOsc+Gzr8vIiwgIlVURi04IikucmVwbGFj
+ZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpO30=</parameter>
+              <parameter name="setMonth">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke21vbnRoLnRy
+aW0oKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setProtocol_number">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABkke3Byb3RvY29s
+X251bWJlci50cmltKCl9</parameter>
+              <parameter name="setOu_site">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABEke291X3NpdGUu
+dHJpbSgpfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setDay">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA0ke2RheS50cmlt
+KCl9</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABUke2ZvbGRlcl9u
+YW1lLnRyaW0oKX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setYear">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke3llYXIudHJp
+bSgpfQ==</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>Evaluate_if_an_object_has_children</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setFolder_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AMAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtzb3VyY2Vfc2l0ZX0vZG9jdW1lbnRMaWJyYXJ5L86gz4HOv8+D
+z4nPgc65zr3OrCDOkc+Bz4fOtc6vzrEvJHt0ZW1wb3JhcnlfZm9sZGVyX25hbWV9L86jz4XOvc63
+zrzOvM6tzr3OsSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwo
+JyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="attached_files_folder_has_children">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAkke3Jlc3VsdH0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error13">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="Terminate_End_Event3">
+        <label>Terminate_End_Event3</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>true</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="rename_copied_folder_with_protocol_number">
+        <label>Rename_copied_folder_with_protocol_number</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>RenameFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setAlfresco_newsummary">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AFokeyLOkc+Azr/P
+g8+Ezr/Ou86tzrHPgiAtICIrc291cmNlX3NpdGVfdGl0bGUudHJpbSgpLnJlcGxhY2VBbGwoIlte
+XFxwe0x9XFxwe05kfV0rIiwgIiAiKX0=</parameter>
+              <parameter name="setAlfresco_folder_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AK0ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vJHtmb2xkZXJfMl9iZV9jb3BpZWR9IiwgIlVURi04
+IikucmVwbGFjZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_newfoldername">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AEoke3Byb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgi
+XyIpWzFdfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_newtitle">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ADQke3RoZW1lLnRy
+aW0oKS5yZXBsYWNlQWxsKCJbXlxccHtMfVxccHtOZH1dKyIsICIgIil9</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error10">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="evaluate_number_of_children_of_copied_object">
+        <label>Μέτρηση Φακέλων και αρχείων Αντεγραμμένου Αντικειμένου</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <loop-condition>number_of_children_of_copied_object&lt;number_of_children</loop-condition>
+        <before-execution>false</before-execution>
+        <connectors>
+          <connector>
+            <classname>Count_number_of_children</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setFolder_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AK4ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vJHtmb2xkZXJfMl9iZV9jb3BpZWR9LyIsICJVVEYt
+OCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="number_of_children_of_copied_object">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABUke251bWJlcl9v
+Zl9jaGlsZHJlbn0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error12">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_given_folder">
+        <label>Έλεγχος ύπαρξης δοθέντος Φακέλου </label>
+        <description>Ελέγχει αν υπάρχει ο φάκελος με το όνομα που δίνεται από την κεντρική ροή μέσα στο site της Δ/νσης</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>TestGivenTitleInAlfFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="folder_name_exist">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke2ZvbGRlcl9m
+b3VuZH0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setPath">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AHAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkiLCAiVVRGLTgiKS5y
+ZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyl9</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setName_2_check">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke2ZvbGRlcl9u
+YW1lfQ==</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error1">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="creation_of_folders_year_month_day_in_given_folder">
+        <label>Δημιουργία Φακέλων: Έτος - Μήνας - Μέρα</label>
+        <description>Δημιουργεί φάκελους με ονόματα το τρέχον "Έτος" και τρέχοντα "Μήνα" και "Μέρα" μέσα στο φάκελο που δίνεται από την αρχική ροή</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AH8ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0iLCAiVVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcv
+Jyl9</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AIcke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwo
+JyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJl
+cGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error4">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="create_link_2_attached_files_folder">
+        <label>create_link_2_attached_files_folder</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AOMke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vJHtwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVsw
+XSsiICIrIi0iKyIgIitwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVsxXX0vIiwgIlVURi04Iiku
+cmVwbGFjZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABLOo8+Fzr3Ot868
+zrzOrc69zrE=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABLOo8+Fzr3Ot868
+zrzOrc69zrE=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABLOo8+Fzr3Ot868
+zrzOrc69zrE=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>Linkobject</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setSource_object">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0Ak8ke2ltcG9ydCBq
+YXZhLm5ldC5VUkxFbmNvZGVyOw0NaWYocHJvY2Vzc0luc3RhbmNlLmdldFBhcmVudEluc3RhbmNl
+VVVJRCgpLnRvU3RyaW5nKCkuY29udGFpbnMoIjJfdXBsb2FkIik9PXRydWUpDXJldHVybiBVUkxF
+bmNvZGVyLmVuY29kZSgiL3Rlc3Rkb2N1bWVudHMvIit5ZWFyKyIvIittb250aCsiLyIrZGF5KyIv
+Iitwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVswXSsiICIrIi0iKyIgIitwcm90b2NvbF9udW1i
+ZXIuc3BsaXQoIl8iKVsxXSsiL86jz4XOvc63zrzOvM6tzr3OsS8iLCAiVVRGLTgiKS5yZXBsYWNl
+QWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyk7DWVsc2UgcmV0dXJuIFVSTEVu
+Y29kZXIuZW5jb2RlKCIvzojOs86zz4HOsc+GzrEgzpTOrs68zr/PhSDOkc64zrfOvc6xzq/Pic69
+LyIreWVhcisiLyIrbW9udGgrIi8iK2RheSsiLyIrcHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilb
+MF0rIiAiKyItIisiICIrcHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilbMV0rIi/Oo8+Fzr3Ot868
+zrzOrc69zrEvIiwgIlVURi04IikucmVwbGFjZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgn
+JTJGJywnLycpO30=</parameter>
+              <parameter name="setMonth">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke21vbnRoLnRy
+aW0oKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setProtocol_number">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABkke3Byb3RvY29s
+X251bWJlci50cmltKCl9</parameter>
+              <parameter name="setOu_site">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABEke291X3NpdGUu
+dHJpbSgpfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setDay">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA0ke2RheS50cmlt
+KCl9</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABUke2ZvbGRlcl9u
+YW1lLnRyaW0oKX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setYear">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke3llYXIudHJp
+bSgpfQ==</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error17">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="Copy_folder_with_files">
+        <label>Αντιγραφή Φακέλων και αρχείων</label>
+        <description>Αντιγράφει τον φάκελο με τα αρχεία στην επιλεγμένη Διέυθυνση</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>gr.daem.CopyObject</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setSource_object">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AMMke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtzb3VyY2Vfc2l0ZX0vZG9jdW1lbnRMaWJyYXJ5L86gz4HOv8+D
+z4nPgc65zr3OrCDOkc+Bz4fOtc6vzrEvJHt0ZW1wb3JhcnlfZm9sZGVyX25hbWV9LyR7Zm9sZGVy
+XzJfYmVfY29waWVkfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VB
+bGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setDestination_folder">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJcke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0iLCAiVVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCcl
+MjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyl9</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+              <parameter name="status">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAkke3N0YXR1c30=</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error8">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="Start1">
+        <label>Start1</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="move_folder_2_approved_cases_cc_fc_qol">
+        <label>move_folder_2_approved_cases_cc_fc_qol</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>MoveObject</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>cc_fc_qol_radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setDestination_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJgke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vIiwgIlVURi04IikucmVwbGFjZUFsbCgnXFwrJywn
+JTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setSource_object_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AOoke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvzpXOuc+DzrXPgc+H
+z4zOvM61zr3OsS8ke3llYXJ9LyR7bW9udGh9LyR7ZGF5fS8ke3Byb3RvY29sX251bWJlci5zcGxp
+dCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzFdfSIsICJV
+VEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>gr.athens.antonis.JsonWS</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>cc_fc_qol_radweriel_error</error-code>
+            <parameters>
+              <parameter name="setPassword">
+</parameter>
+              <parameter name="setUsername">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setBody">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AaYke2ltcG9ydCBq
+YXZhLm5ldC5VUkxFbmNvZGVyOw0NLy9kZWYgb3Vfc2l0ZSA9IHllYXIgPSBtb250aCA9IGRheSA9
+ICLOtM+Gz4POtM+Gz4POtM+DzrTPhiDOtM+GzrPOtM+GzrMiOw0NcmV0dXJuICAieyIrDQkJIlwi
+cGF0aFwiOlwiIitVUkxFbmNvZGVyLmVuY29kZSgiL1NpdGVzLyIrb3Vfc2l0ZS50cmltKCkrIi9k
+b2N1bWVudExpYnJhcnkvzpXOuc+DzrXPgc+Hz4zOvM61zr3OsS8iK3llYXIudHJpbSgpKyIvIitt
+b250aC50cmltKCkrIi8iK2RheS50cmltKCksICJVVEYtOCIpLnJlcGxhY2VBbGwoIlxcKyIsIiUy
+MCIpLnJlcGxhY2VBbGwoIiUyRiIsIi8iKSsiXCIiKw0gICAgCSJ9IjsNCQ0vL1NpdGVzLyR7b3Vf
+c2l0ZX0vZG9jdW1lbnRMaWJyYXJ5L86VzrnPg861z4HPh8+MzrzOtc69zrEvJHt5ZWFyfS8ke21v
+bnRofS8ke2RheX0vfQ==</parameter>
+              <parameter name="setEndpoint">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AFokeyJodHRwOi8v
+Ii50cmltKCkrYWxmcmVzY29faG9zdC50cmltKCkrIjo4MDgwL2FsZnJlc2NvL3MvZGVsZXRlbm9k
+ZWJ5cGF0aGlmZW1wdHkiLnRyaW0oKX0=</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error16">
+              <error-code>cc_fc_qol_radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="move_temporary_folder_in_rejected_files">
+        <label>Mετακίνηση προσωρινού φακέλου  στα Απορριφθέντα</label>
+        <description> μετακινεί τον προσωρινό φάκελο με τα περιεχόμενά του στα Απορριφθέντα</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>MoveObject</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setDestination_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJgke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofS8ke2RheX0vIiwgIlVURi04IikucmVwbGFjZUFsbCgnXFwrJywn
+JTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setSource_object_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AK0ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtzb3VyY2Vfc2l0ZX0vZG9jdW1lbnRMaWJyYXJ5L86gz4HOv8+D
+z4nPgc65zr3OrCDOkc+Bz4fOtc6vzrEvJHt0ZW1wb3JhcnlfZm9sZGVyX25hbWV9IiwgIlVURi04
+IikucmVwbGFjZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycpfQ==</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error7">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="creation_of_day_folder">
+        <label>Δημιουργία Φακέλου Μέρας</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJl
+cGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error15">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="automations">
+        <label>automations</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0Bx1kZWYgdG9kYXkg
+PSBuZXcgRGF0ZSgpOw1kZWYgdGVtcF95ZWFyID0gMTkwMCt0b2RheS55ZWFyOyANZGVmIHRyYXNj
+ZW5kX21vbnRocyA9IFsnMDEnLCAnzpnOsc69zr/Phc6sz4HOuc6/z4InLCAnMDInLCAnzqbOtc6y
+z4HOv8+FzqzPgc65zr/PgicsICcwMycsICfOnM6sz4HPhM65zr/PgicsICcwNCcsICfOkc+Az4HO
+r867zrnOv8+CJywNCScwNScsICfOnM6szrnOv8+CJywgJzA2JywgJ86Zzr/Pjc69zrnOv8+CJywg
+JzA3JywgJ86Zzr/Pjc67zrnOv8+CJywgJzA4JywgJ86Rz43Os86/z4XPg8+Ezr/PgicsICcwOScs
+ICfOo861z4DPhM6tzrzOss+BzrnOv8+CJywNCScxMCcsICfOn866z4TPjs6yz4HOuc6/z4InLCcx
+MScsICfOnc6/zq3OvM6yz4HOuc6/z4InLCAnMTInLCAnzpTOtc66zq3OvM6yz4HOuc6/z4InXTsN
+DS8vUHJvdG9jb2wgTnVtYmVyIGlzIG5vdCBlbXB0eSEhDWlmKHByb3RvY29sX251bWJlcil7DQkN
+Ly9ZZWFyDXllYXI9cHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilbMV0uc3BsaXQoIi0iKVsyXS50
+cmltKCk7DWlmKHllYXI9PXRlbXBfeWVhci50b1N0cmluZygpLnN1YnN0cmluZyh0ZW1wX3llYXIu
+dG9TdHJpbmcoKS5sZW5ndGgoKS0yLHRlbXBfeWVhci50b1N0cmluZygpLmxlbmd0aCgpKSl7DXll
+YXI9dGVtcF95ZWFyLnRvU3RyaW5nKCk7DVN5c3RlbS5vdXQucHJpbnRsbigiWWVhciBpcyA6ICIr
+eWVhcik7DX0NZWxzZSB7DXllYXIgPSB0ZW1wX3llYXIudG9TdHJpbmcoKS5zdWJzdHJpbmcoMCx0
+ZW1wX3llYXIudG9TdHJpbmcoKS5sZW5ndGgoKS0yKSArIHllYXI7DVN5c3RlbS5vdXQucHJpbnRs
+bigiWWVhciBpcyA6ICIreWVhcik7DX0NDQ0vL01vbnRoDW1vbnRoPXByb3RvY29sX251bWJlci5z
+cGxpdCgiXyIpWzFdLnNwbGl0KCItIilbMV0udHJpbSgpOw1mb3IgKGludCBpPTA7IGk8dHJhc2Nl
+bmRfbW9udGhzLnNpemUoKTsgaSs9MikNew0JaWYgKHRyYXNjZW5kX21vbnRoc1tpXS50cmltKCk9
+PW1vbnRoLnRyaW0oKSkNCQltb250aCA9IHRyYXNjZW5kX21vbnRoc1tpKzFdLnRyaW0oKTsNfQ1T
+eXN0ZW0ub3V0LnByaW50bG4oIk1vbnRoIGlzIDogIittb250aCk7DQ0NLy9EYXkNZGF5PXByb3Rv
+Y29sX251bWJlci5zcGxpdCgiXyIpWzFdLnNwbGl0KCItIilbMF0udHJpbSgpOw1TeXN0ZW0ub3V0
+LnByaW50bG4oIkRheSBpcyA6ICIrZGF5KTsNfQ0NLy9SZWplY3Rpb24gLS0tIFByb3RvY29sIE51
+bWJlciBpcyBlbXB0eSEhDWVsc2V7DVN5c3RlbS5vdXQucHJpbnRsbigiUmVqZWN0aW9uIGNhc2Uh
+ISEhIik7DQ0vL1llYXINeWVhciA9IHRlbXBfeWVhci50b1N0cmluZygpDVN5c3RlbS5vdXQucHJp
+bnRsbigiWWVhciBpcyA6ICIreWVhcik7DQ0vL01vbnRoDWRlZiB0ZW1wX21vbnRoID0gIiI7DWlm
+KCh0b2RheS5tb250aCsxKS50b1N0cmluZygpLnRyaW0oKS5sZW5ndGgoKT09MSkNdGVtcF9tb250
+aCA9ICIwIisodG9kYXkubW9udGgrMSkudG9TdHJpbmcoKS50cmltKCk7DWVsc2UgdGVtcF9tb250
+aCA9ICh0b2RheS5tb250aCsxKS50b1N0cmluZygpLnRyaW0oKTsNDWZvcihpbnQgaj0wOyBqPHRy
+YXNjZW5kX21vbnRocy5zaXplKCk7IGorPTIpDXsNCWlmICh0cmFzY2VuZF9tb250aHNbal0udHJp
+bSgpPT10ZW1wX21vbnRoLnRyaW0oKSkNCW1vbnRoID0gdHJhc2NlbmRfbW9udGhzW2orMV0udHJp
+bSgpOw0JDX0NU3lzdGVtLm91dC5wcmludGxuKCJNb250aCBpcyA6ICIrbW9udGgpOw0NLy9EYXkN
+ZGF5ID0gdG9kYXkuZGF0ZS50b1N0cmluZygpDWlmKGRheS5sZW5ndGgoKT09MSkNZGF5ID0gIjAi
+K2RheTsNU3lzdGVtLm91dC5wcmludGxuKCJEYXkgaXMgOiAiK2RheSk7DX0=</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0CadpbXBvcnQgb3Jn
+Lm93Mi5ib25pdGEuZmFjYWRlLnV1aWQuUHJvY2Vzc0luc3RhbmNlVVVJRA0NZGVmIGJvb2xlYW4g
+ZXZhbHVhdG9yID0gZmFsc2U7DWRlZiBwYXJlbnRfaW5pdGlhdG9yID0gWzpdDQ0NZGVmIGV4aXN0
+aW5nX3BhcmVudF9hY3Rpdml0aWVzID0gYXBpQWNjZXNzb3IuZ2V0UXVlcnlSdW50aW1lQVBJKCku
+Z2V0QWN0aXZpdHlJbnN0YW5jZXMoIG5ldyBQcm9jZXNzSW5zdGFuY2VVVUlEKHByb2Nlc3NJbnN0
+YW5jZS5nZXRQYXJlbnRJbnN0YW5jZVVVSUQoKS50b1N0cmluZygpLnRyaW0oKSkpLnRvQXJyYXko
+KTsNZm9yKGludCBpPTA7IGk8ZXhpc3RpbmdfcGFyZW50X2FjdGl2aXRpZXMuc2l6ZSgpOyBpKysp
+IHsNCWlmKGV4aXN0aW5nX3BhcmVudF9hY3Rpdml0aWVzW2ldLmdldEFjdGl2aXR5TmFtZSgpLmNv
+bnRhaW5zKCJjY19mY19sZmNfZ2F0ZXdhIik9PXRydWUpIHsNCQlldmFsdWF0b3IgPSB0cnVlOw0J
+CX0NfQ0NDWlmKGV2YWx1YXRvciA9PSBmYWxzZSkgew1wYXJlbnRfaW5pdGlhdG9yID0gYXBpQWNj
+ZXNzb3IuZ2V0UXVlcnlSdW50aW1lQVBJKCkuZ2V0UHJvY2Vzc0luc3RhbmNlVmFyaWFibGUoIG5l
+dyBQcm9jZXNzSW5zdGFuY2VVVUlEKHByb2Nlc3NJbnN0YW5jZS5nZXRQYXJlbnRJbnN0YW5jZVVV
+SUQoKS50b1N0cmluZygpLnRyaW0oKSksICJlbXBsb3llZV9hdHRyaWJ1dGVzIiApOw1pbml0aWF0
+b3JfZW1haWw9cGFyZW50X2luaXRpYXRvclsnbWFpbCddLnRvU3RyaW5nKCkudHJpbSgpOyANfQ1l
+bHNlIHsJDQlpZihvdV9zaXRlLmNvbnRhaW5zKCJEaW1vdGlrb3UiKT09dHJ1ZSkgew0JcGFyZW50
+X2luaXRpYXRvciA9IGFwaUFjY2Vzc29yLmdldFF1ZXJ5UnVudGltZUFQSSgpLmdldFByb2Nlc3NJ
+bnN0YW5jZVZhcmlhYmxlKCBuZXcgUHJvY2Vzc0luc3RhbmNlVVVJRChwcm9jZXNzSW5zdGFuY2Uu
+Z2V0UGFyZW50SW5zdGFuY2VVVUlEKCkudG9TdHJpbmcoKS50cmltKCkpLCAiY2l0eV9jb3VuY2ls
+X3ByZXNpZGVudCIgKTsNCWluaXRpYXRvcl9lbWFpbCA9IHBhcmVudF9pbml0aWF0b3JbJ21haWwn
+XS50b1N0cmluZygpLnRyaW0oKTsNCWFnZW50c19lbWFpbCA9IGluaXRpYXRvcl9lbWFpbCArICIs
+IiArIGFwaUFjY2Vzc29yLmdldFF1ZXJ5UnVudGltZUFQSSgpLmdldFByb2Nlc3NJbnN0YW5jZVZh
+cmlhYmxlKCBuZXcgUHJvY2Vzc0luc3RhbmNlVVVJRChwcm9jZXNzSW5zdGFuY2UuZ2V0UGFyZW50
+SW5zdGFuY2VVVUlEKCkudG9TdHJpbmcoKS50cmltKCkpLCAiY2l0eV9jb3VuY2lsX2FnZW50c19l
+bWFpbCIgKTsNCX0NCWVsc2UgaWYob3Vfc2l0ZS5jb250YWlucygicG9pb3RodGFzIik9PXRydWUp
+IHsNCXBhcmVudF9pbml0aWF0b3IgPSBhcGlBY2Nlc3Nvci5nZXRRdWVyeVJ1bnRpbWVBUEkoKS5n
+ZXRQcm9jZXNzSW5zdGFuY2VWYXJpYWJsZSggbmV3IFByb2Nlc3NJbnN0YW5jZVVVSUQocHJvY2Vz
+c0luc3RhbmNlLmdldFBhcmVudEluc3RhbmNlVVVJRCgpLnRvU3RyaW5nKCkudHJpbSgpKSwgInF1
+YWxpdHlfb2ZfbGlmZV9wcmVzaWRlbnQiICk7DQlpbml0aWF0b3JfZW1haWwgPSBwYXJlbnRfaW5p
+dGlhdG9yWydtYWlsJ10udG9TdHJpbmcoKS50cmltKCk7DQlhZ2VudHNfZW1haWwgPSBpbml0aWF0
+b3JfZW1haWwgKyAiLCIgKyBhcGlBY2Nlc3Nvci5nZXRRdWVyeVJ1bnRpbWVBUEkoKS5nZXRQcm9j
+ZXNzSW5zdGFuY2VWYXJpYWJsZSggbmV3IFByb2Nlc3NJbnN0YW5jZVVVSUQocHJvY2Vzc0luc3Rh
+bmNlLmdldFBhcmVudEluc3RhbmNlVVVJRCgpLnRvU3RyaW5nKCkudHJpbSgpKSwgInF1YWxpdHlf
+b2ZfbGlmZV9hZ2VudHNfZW1haWwiICk7DQl9DQllbHNlIGlmKG91X3NpdGUuY29udGFpbnMoIm9p
+a29ub21pa2giKT09dHJ1ZSkgew0JcGFyZW50X2luaXRpYXRvciA9IGFwaUFjY2Vzc29yLmdldFF1
+ZXJ5UnVudGltZUFQSSgpLmdldFByb2Nlc3NJbnN0YW5jZVZhcmlhYmxlKCBuZXcgUHJvY2Vzc0lu
+c3RhbmNlVVVJRChwcm9jZXNzSW5zdGFuY2UuZ2V0UGFyZW50SW5zdGFuY2VVVUlEKCkudG9TdHJp
+bmcoKS50cmltKCkpLCAiZmluYW5jaWFsX2NvbW1pdHRlZV9wcmVzaWRlbnQiICk7DQlpbml0aWF0
+b3JfZW1haWwgPSBwYXJlbnRfaW5pdGlhdG9yWydtYWlsJ10udG9TdHJpbmcoKS50cmltKCk7DQlh
+Z2VudHNfZW1haWwgPSBpbml0aWF0b3JfZW1haWwgKyAiLCIgKyBhcGlBY2Nlc3Nvci5nZXRRdWVy
+eVJ1bnRpbWVBUEkoKS5nZXRQcm9jZXNzSW5zdGFuY2VWYXJpYWJsZSggbmV3IFByb2Nlc3NJbnN0
+YW5jZVVVSUQocHJvY2Vzc0luc3RhbmNlLmdldFBhcmVudEluc3RhbmNlVVVJRCgpLnRvU3RyaW5n
+KCkudHJpbSgpKSwgImZpbmFuY2lhbF9jb21taXR0ZWVfYWdlbnRzX2VtYWlsIiApOw0JfQ0JZWxz
+ZSB7DQlpbml0aWF0b3JfZW1haWwgPSBhZ2VudHNfZW1haWwgPSAiU1lTVEVNQGF0aGVucy5nciI7
+DQl9CQ19DVN5c3RlbS5vdXQucHJpbnRsbigiaW5pdGlhdG9yX2VtYWlsIGlzIDogIitpbml0aWF0
+b3JfZW1haWwpOw==</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.bonita.SetVarConnector</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setVariableName">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA1hbGZyZXNjb19o
+b3N0</parameter>
+              <parameter name="setValue">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0Aa4ke2ltcG9ydCBq
+YXZhLm5ldC5JbmV0QWRkcmVzczsNaW1wb3J0IGphdmEubmV0LlVua25vd25Ib3N0RXhjZXB0aW9u
+Ow0NSW5ldEFkZHJlc3MgaW5hIDsNDXRyeSB7DQlpbmEgPSBJbmV0QWRkcmVzcy5nZXRMb2NhbEhv
+c3QoKTsNCWRlZiBob3N0bmFtZSA9IGluYS5nZXRIb3N0TmFtZSgpOw0JLy9TeXN0ZW0ub3V0LnBy
+aW50bG4oaG9zdG5hbWUpOw0JaWYoaG9zdG5hbWUuY29udGVudEVxdWFscygidGhhbGVzIik9PXRy
+dWV8fGhvc3RuYW1lLmNvbnRlbnRFcXVhbHMoInRoYWxlcy5jaXR5b2ZhdGhlbnMuZ3IiKT09dHJ1
+ZSkgew0JCXJldHVybiAicmFkd2VyaWVsLmNpdHlvZmF0aGVucy5nciI7DQl9ZWxzZSByZXR1cm4g
+IjEwLjEuMjAuMTE5IjsNfQ0gY2F0Y2ggKFVua25vd25Ib3N0RXhjZXB0aW9uIGUpIHsNCQkJZS5w
+cmludFN0YWNrVHJhY2UoKTsNIH19</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_initial_folder_gateway">
+        <label>check initial folder gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="count_object_2_be_copied_children">
+        <label>Μέτρηση Φακέλων και αρχείων Αντικειμένου προς Αντιγραφή</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>Count_number_of_children</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setFolder_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AMMke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtzb3VyY2Vfc2l0ZX0vZG9jdW1lbnRMaWJyYXJ5L86gz4HOv8+D
+z4nPgc65zr3OrCDOkc+Bz4fOtc6vzrEvJHt0ZW1wb3JhcnlfZm9sZGVyX25hbWV9LyR7Zm9sZGVy
+XzJfYmVfY29waWVkfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VB
+bGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="number_of_children">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABUke251bWJlcl9v
+Zl9jaGlsZHJlbn0=</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error11">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_year_folder_gateway">
+        <label>check year folder gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_month_folder_gateway">
+        <label>check month folder gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="get_emails_from_agent_in_ldap_and_notify_ou">
+        <label>get_emails_from_agent_in_ldap_and_notify_ou</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="instance_url">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAkke3Jlc3VsdH0=</parameter>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0B04vKmltcG9ydCBq
+YXZhLm5ldC5VUkxFbmNvZGVyOw1kZWYgdGVtcDE9VVJMRW5jb2Rlci5lbmNvZGUoZm9sZGVyX25h
+bWUsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8n
+KTsNZGVmIHRlbXAyPVVSTEVuY29kZXIuZW5jb2RlKG1vbnRoLCAiVVRGLTgiKS5yZXBsYWNlQWxs
+KCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyk7DWRlZiB0ZW1wMyA9IHByb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgi
+XyIpWzFdOw1kZWYgdXJsID0gImh0dHA6Ly9hcnhlaW9meWxheC5jaXR5b2ZhdGhlbnMuZ3Ivc2hh
+cmUvcGFnZS9zaXRlLyIrb3Vfc2l0ZSsiL2RvY3VtZW50bGlicmFyeSNmaWx0ZXI9cGF0aHwlMkYi
+K3RlbXAxKyIlMkYiK3llYXIrIiUyRiIrdGVtcDIrIiUyRiIrdGVtcDMrInwmcGFnZT0xIjsNcmV0
+dXJuIHVybCovDQ0NaW1wb3J0IGphdmEubmV0LlVSTEVuY29kZXI7DQ1kZWYgdXJsPSIiOw1pZihw
+cm9jZXNzSW5zdGFuY2UuZ2V0UGFyZW50SW5zdGFuY2VVVUlEKCkudG9TdHJpbmcoKS5jb250YWlu
+cygiMl91cGxvYWQiKT09dHJ1ZSkNew0JZGVmIHRlbXAxPSJ0ZXN0ZG9jdW1lbnRzIjsNCWRlZiB0
+ZW1wMiA9IHByb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzFdOw0JZGVmIHRlbXAzID0gVVJMRW5jb2Rlci5lbmNvZGUodGVt
+cDIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8n
+KTsNCWRlZiB0ZW1wNCA9IFVSTEVuY29kZXIuZW5jb2RlKG1vbnRoLCAiVVRGLTgiKS5yZXBsYWNl
+QWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyk7DQl1cmwgPSAiaHR0cDovLyIr
+YWxmcmVzY29faG9zdCsiOjgwODAvc2hhcmUvcGFnZS9yZXBvc2l0b3J5I2ZpbHRlcj1wYXRoJTdD
+JTJGIit0ZW1wMSsiJTJGIit5ZWFyKyIlMkYiK3RlbXA0KyIlMkYiK2RheSsiJTJGIit0ZW1wMysi
+JTdDJnBhZ2U9MSI7DQlTeXN0ZW0ub3V0LnByaW50bG4oIkVpbWFzdGUgc3RvIFRFU1RfdXJsLS0t
+LS0tLS0tLS0tLS0tLS1mb3IgIGNyZWF0ZV9mb2xkZXJfeWVhcl9tb250aCEhISFcbiIpOw0JU3lz
+dGVtLm91dC5wcmludGxuKHVybCk7DX0NZWxzZSANew0JZGVmIHRlbXAxID0gVVJMRW5jb2Rlci5l
+bmNvZGUoIs6IzrPOs8+BzrHPhs6xIM6Uzq7OvM6/z4UgzpHOuM63zr3Osc6vz4nOvSIsICJVVEYt
+OCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8nKTsNCWRlZiB0
+ZW1wMiA9IHByb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzFdOw0JZGVmIHRlbXAzID0gVVJMRW5jb2Rlci5lbmNvZGUodGVt
+cDIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwoJyUyRicsJy8n
+KTsNCWRlZiB0ZW1wNCA9IFVSTEVuY29kZXIuZW5jb2RlKG1vbnRoLCAiVVRGLTgiKS5yZXBsYWNl
+QWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyk7DQl1cmwgPSAiaHR0cDovLyIr
+YWxmcmVzY29faG9zdCsiOjgwODAvc2hhcmUvcGFnZS9yZXBvc2l0b3J5I2ZpbHRlcj1wYXRoJTdD
+JTJGIit0ZW1wMSsiJTJGIit5ZWFyKyIlMkYiK3RlbXA0KyIlMkYiK2RheSsiJTJGIit0ZW1wMysi
+JTdDJnBhZ2U9MSI7DQlTeXN0ZW0ub3V0LnByaW50bG4oIkVpbWFzdGUgc3RvIEZvcm1hbF91cmwt
+LS0tLS0tLS0tLS0tLS0tLWZvciAgY3JlYXRlX2ZvbGRlcl95ZWFyX21vbnRoISEhIVxuIik7DQlT
+eXN0ZW0ub3V0LnByaW50bG4odXJsKTsNfQ1yZXR1cm4gdXJs</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.ldap.LdapConnector</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>LDAP_error</error-code>
+            <parameters>
+              <parameter name="setBaseObject">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AFRvdT1wZW9wbGUs
+b3U9dGVtcF9hZ2VudHMsb3U9RElBS0lOSVNJX0VHR1JBRk9OLG91PUFQUExJQ0FUSU9OUyxkYz1j
+aXR5b2ZhdGhlbnMsZGM9Z3I=</parameter>
+              <parameter name="setPassword"></parameter>
+              <parameter name="setHost">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABlnYWxnYWxsaW4u
+Y2l0eW9mYXRoZW5zLmdy</parameter>
+              <parameter name="setProtocol">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AARMREFQ</parameter>
+              <parameter name="setAttributes">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AARtYWls</parameter>
+              <parameter name="setPort">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAMzODk=</parameter>
+              <parameter name="setReferralHandling">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAZpZ25vcmU=</parameter>
+              <parameter name="setFilter">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA1vdT0ke291X3Np
+dGV9</parameter>
+              <parameter name="setDerefAliases">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAZBTFdBWVM=</parameter>
+              <parameter name="setTimeLimit">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAEx</parameter>
+              <parameter name="setSizeLimit">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAM1MDA=</parameter>
+              <parameter name="setUserName"></parameter>
+              <parameter name="ou_mail">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AIske2lmKGxkYXBB
+dHRyaWJ1dGVMaXN0KSB7DXJldHVybiBsZGFwQXR0cmlidXRlTGlzdFswXVswXS5nZXRWYWx1ZSgp
+Ow19ZWxzZSB7DQl0aHJvdyBuZXcgUnVudGltZUV4Y2VwdGlvbigiZXJyb3Igd2l0aCBhY3F1aXJp
+bmcgZW1haWwiKTsNCX19</parameter>
+              <parameter name="setScope">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAdTVUJUUkVF</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.email.EmailConnector</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>false</throw-exception>
+            <parameters>
+              <parameter name="setHeaders">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setAttachments">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setCharset">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAV1dGYtOA==</parameter>
+              <parameter name="setPassword">
+</parameter>
+              <parameter name="setBcc"></parameter>
+              <parameter name="setSubject">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ARgke2RlZiB0ZW1w
+PSIiOw1pZihmb2xkZXJfbmFtZT09Is6azr/Ouc69zr/PgM6/zrnOrs+DzrXOuc+CIikNdGVtcCA9
+ICIozprOv865zr3Ov8+Azr/Or863z4POtykiOw1lbHNlIHRlbXAgPSAiKM6VzrnPg861z4HPh8+M
+zrzOtc69zr8gz4DPgc6/z4IgzrXOvc6tz4HOs861zrnOsSkiOw1yZXR1cm4gcHJvdG9jb2xfbnVt
+YmVyLnNwbGl0KCJfIilbMF0rIiAiKyItIisiICIrcHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilb
+MV0rIiDOsc+Az4wgIitzb3VyY2Vfc2l0ZV90aXRsZSsiICIrdGVtcDt9</parameter>
+              <parameter name="setFrom">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setCc"></parameter>
+              <parameter name="setHtml">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAB</parameter>
+              <parameter name="setMessage">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0CDEke2RlZiB0ZW1w
+PSIiOw1pZihmb2xkZXJfbmFtZT09Is6azr/Ouc69zr/PgM6/zrnOrs+DzrXOuc+CIikNdGVtcCA9
+ICLOms6/zrnOvc6/z4DOv86vzrfPg863IjsNZWxzZSB0ZW1wID0gIs6VzrnPg861z4HPh8+MzrzO
+tc69zr8gz4DPgc6/z4IgzrXOvc6tz4HOs861zrnOsSI7DXJldHVybiAizqXPgM6sz4HPh861zrkg
+zr3Orc6xICDPhc+Az4zOuM61z4POtyDOvM61IM64zq3OvM6xOiAiK3RoZW1lKyIgzrrOsc65IM6x
+z4HOuc64zrzPjCDPgM+Bz4nPhM6/zrrPjM67zrvOv8+FOiAiK3Byb3RvY29sX251bWJlci5zcGxp
+dCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzFdKyIgzrHP
+gM+MIM+EzrcgzpTOuc61z43OuM+Fzr3Pg863OiAiK3NvdXJjZV9zaXRlX3RpdGxlKyIgz4nPgiAi
+K3RlbXArIi4ifQo8YnIvPjxici8+Cs6kzrEgzrHPgc+HzrXOr86xIM6tz4fOv8+Fzr0gzrzOtc+E
+zrHPhs6/z4HPhM+JzrjOtc6vIM+Dz4TOvyDOus61zr3PhM+BzrnOus+MIM6xz4DOv864zrXPhM6u
+z4HOuc6/IM61zrPOs8+BzqzPhs+Jzr0uCjxiciAvPjxiciAvPgrOlM61zq/PhM61IM+EzrEgzrHP
+gc+HzrXOr86xIM+Dz4fOtc+EzrnOus6sIM68zrUgz4TOt869IDxhIGhyZWY9IiR7aW5zdGFuY2Vf
+dXJsfSI+zqXPgM+MzrjOtc+DzrcgJHtwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVswXSsiICIr
+Ii0iKyIgIitwcm90b2NvbF9udW1iZXIuc3BsaXQoIl8iKVsxXX08L2E+Cjxici8+PGJyLz4KPGI+
+PGk+CiR7aWYob3Vfc2l0ZS5jb250YWlucygiSW1lcmlzaWVzRGltb3Rpa291Iik9PXRydWUpCnsK
+CWlmKGZvbGRlcl9uYW1lLmNvbnRhaW5zKCLOms6/zrnOvc6/z4DOv865zq7PgyIpPT1mYWxzZSkK
+CXJldHVybiAizpcgzrXOuc+Dzq7Os863z4POtyDOss+Bzq/Pg866zrXPhM6xzrkgzrXOvSDOsc69
+zrHOvM6/zr3OriDOs865zrEgzq3Os866z4HOuc+DzrcgzrHPgM+MIM+Ezr/OvSDOoM+Bz4zOtc60
+z4HOvyDOlM63zrzOv8+EzrnOus6/z40gzqPPhc68zrLOv8+FzrvOr86/z4UuIM6YzrEgzrXOvc63
+zrzOtc+Bz4nOuM61zq/PhM61IM68zrUgzr3Orc6/IGVtYWlsIM68z4zOu865z4IgzrcgzrXOuc+D
+zq7Os863z4POtyDOtc6zzrrPgc65zrjOtc6vLiIKCWVsc2UgcmV0dXJuICIiOwp9CmVsc2UgaWYo
+b3Vfc2l0ZS5jb250YWlucygib2lrb25vbWlraGVwaXRyIik9PXRydWUpCnsKCWlmKGZvbGRlcl9u
+YW1lLmNvbnRhaW5zKCLOms6/zrnOvc6/z4DOv865zq7PgyIpPT1mYWxzZSkKCXJldHVybiAizpcg
+zrXOuc+Dzq7Os863z4POtyDOss+Bzq/Pg866zrXPhM6xzrkgzrXOvSDOsc69zrHOvM6/zr3OriDO
+s865zrEgzq3Os866z4HOuc+DzrcgzrHPgM+MIM+Ezr/OvSDOoM+Bz4zOtc60z4HOvyDOn865zrrO
+v869zr/OvM65zrrOrs+CIM6Vz4DOuc+Ez4HOv8+Azq7Pgi4gzpjOsSDOtc69zrfOvM61z4HPic64
+zrXOr8+EzrUgzrzOtSDOvc6tzr8gZW1haWwgzrzPjM67zrnPgiDOtyDOtc65z4POrs6zzrfPg863
+IM61zrPOus+BzrnOuM61zq8uIgoJZWxzZSByZXR1cm4gIiI7Cn0KZWxzZSBpZihvdV9zaXRlLmNv
+bnRhaW5zKCJlcGl0cm9waHBvaW90aHRhc3p3Iik9PXRydWUpCnsKCWlmKGZvbGRlcl9uYW1lLmNv
+bnRhaW5zKCLOms6/zrnOvc6/z4DOv865zq7PgyIpPT1mYWxzZSkKCXJldHVybiAizpcgzrXOuc+D
+zq7Os863z4POtyDOss+Bzq/Pg866zrXPhM6xzrkgzrXOvSDOsc69zrHOvM6/zr3OriDOs865zrEg
+zq3Os866z4HOuc+DzrcgzrHPgM+MIM+Ezr/OvSDOoM+Bz4zOtc60z4HOvyDOlc+AzrnPhM+Bzr/P
+gM6uz4IgzqDOv865z4zPhM63z4TOsc+CIM6Wz4nOrs+CLiDOmM6xIM61zr3Ot868zrXPgc+JzrjO
+tc6vz4TOtSDOvM61IM69zq3OvyBlbWFpbCDOvM+MzrvOuc+CIM63IM61zrnPg86uzrPOt8+Dzrcg
+zrXOs866z4HOuc64zrXOry4iCgllbHNlIHJldHVybiAiIjsKfQplbHNlIHJldHVybiAiIjt9Cjwv
+aT48L2I+Cjxici8+PGJyLz4KzqTOvyBlbWFpbCDOsc+Fz4TPjCDOrc+HzrXOuSDOsc+Azr/Pg8+E
+zrHOu861zq8gzrHPgM+MIM67zr/Os86xz4HOuc6xz4POvM+MIM+Azr/PhSDOtM61zr0gzrTOrc+H
+zrXPhM6xzrkgzrHPgM6xzr3PhM6uz4POtc65z4IuPGJyLz4=</parameter>
+              <parameter name="setSslSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setTimeout">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAUzMDAwMA==</parameter>
+              <parameter name="setUserName">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAlkZS5tYWlsZXI=</parameter>
+              <parameter name="setStarttlsSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setReplyTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAoke291X21haWx9
+</parameter>
+              <parameter name="setSmtpPort">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAIyNQ==</parameter>
+              <parameter name="setSmtpHost">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA5tYWlsLmF0aGVu
+cy5ncg==</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="ldap_error1">
+              <error-code>LDAP_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="visual_ldap_error">
+        <label>Λάθος σε LDAP</label>
+        <description/>
+        <dynamic-label>Ενημέρωση για</dynamic-label>
+        <dynamic-description>λάθος στον Server Διαχείρισης Χρηστών LDAP</dynamic-description>
+        <dynamic-execution-summary>Η ενημέρωση για λάθος στον Server Διαχείρισης Αρχείων LDAP έχει ολοκληρωθεί. Η διαδικασία τερματίστηκε ανεπιτυχώς.</dynamic-execution-summary>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Human</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers>
+          <performer>error_viewer</performer>
+        </performers>
+        <connectors>
+          <connector>
+            <classname>org.bonitasoft.connectors.email.EmailConnector</classname>
+            <description/>
+            <event>taskOnReady</event>
+            <throw-exception>false</throw-exception>
+            <parameters>
+              <parameter name="setHeaders">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setAttachments">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setCharset">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAV1dGYtOA==</parameter>
+              <parameter name="setPassword">
+</parameter>
+              <parameter name="setBcc"></parameter>
+              <parameter name="setSubject">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AApMREFQIEVSUk9S
+</parameter>
+              <parameter name="setFrom">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setCc"></parameter>
+              <parameter name="setHtml">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAB</parameter>
+              <parameter name="setMessage">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0C6jOoM6xz4HOv8+F
+z4POuc6sz4PPhM63zrrOtSDOsc+Az4HPjM+DzrzOtc69zr8gzrvOrM64zr/PgiDPg8+Ezr/OvSBT
+ZXJ2ZXIgzrTOuc6xz4fOtc6vz4HOuc+DzrfPgiDPh8+BzrfPg8+Ez47OvSBMREFQIM+Dz4TOt869
+IM+Fz4DPjM64zrXPg863OiAke3Byb2Nlc3NJbnN0YW5jZS5nZXRQYXJlbnRJbnN0YW5jZVVVSUQo
+KS50b1N0cmluZygpfQo8YnIgLz4KJHtpbXBvcnQgamF2YS5uZXQuVVJMRW5jb2RlcjsKCmRlZiB0
+ZW1wMSA9IFVSTEVuY29kZXIuZW5jb2RlKCLOoM+Bzr/Pg8+Jz4HOuc69zqwgzpHPgc+HzrXOr86x
+IiwgIlVURi04IikucmVwbGFjZUFsbCgnXFwrJywnJTIwJykucmVwbGFjZUFsbCgnJTJGJywnLycp
+OwpkZWYgdXJsID0gImh0dHA6Ly8iK2FsZnJlc2NvX2hvc3QrIjo4MDgwL3NoYXJlL3BhZ2UvcmVw
+b3NpdG9yeSNmaWx0ZXI9cGF0aCU3QyUyRlNpdGVzJTJGIitzb3VyY2Vfc2l0ZSsiJTJGZG9jdW1l
+bnRMaWJyYXJ5JTJGIit0ZW1wMSsiJTJGIit0ZW1wb3JhcnlfZm9sZGVyX25hbWUrIiU3QyZwYWdl
+PTEiOwpkZWYgZW1wbG95ZWVfYXR0cmlidXRlcyA9IGFwaUFjY2Vzc29yLmdldFF1ZXJ5UnVudGlt
+ZUFQSSgpLmdldFByb2Nlc3NJbnN0YW5jZVZhcmlhYmxlKHByb2Nlc3NJbnN0YW5jZS5nZXRQYXJl
+bnRJbnN0YW5jZVVVSUQoKSwgImVtcGxveWVlX2F0dHJpYnV0ZXMiKTsKZGVmIHNlbGVjdGVkX3Jl
+Y2lwaWVudCA9IGFwaUFjY2Vzc29yLmdldFF1ZXJ5UnVudGltZUFQSSgpLmdldFByb2Nlc3NJbnN0
+YW5jZVZhcmlhYmxlKHByb2Nlc3NJbnN0YW5jZS5nZXRQYXJlbnRJbnN0YW5jZVVVSUQoKSwgInNl
+bGVjdGVkX3JlY2lwaWVudCIpOwpkZWYgc2VsZWN0ZWRfbm90aWZpY2F0aW9uID0gYXBpQWNjZXNz
+b3IuZ2V0UXVlcnlSdW50aW1lQVBJKCkuZ2V0UHJvY2Vzc0luc3RhbmNlVmFyaWFibGUocHJvY2Vz
+c0luc3RhbmNlLmdldFBhcmVudEluc3RhbmNlVVVJRCgpLCAic2VsZWN0ZWRfbm90aWZpY2F0aW9u
+Iik7CgppZihzZWxlY3RlZF9ub3RpZmljYXRpb24pCnJldHVybiAizrcgzr/PgM6/zq/OsSDOvs61
+zrrOr869zrfPg861IM6xz4DPjCDPhM6/zr0gzrXOuc+DzrfOs863z4TOriA6ICIgKyBlbXBsb3ll
+ZV9hdHRyaWJ1dGVzWydjbiddLnRvU3RyaW5nKCkudHJpbSgpICsgIiwgzr8gzr/PgM6/zq/Ov8+C
+IM6xzr3Ors66zrXOuSDPg8+Ezrcvz4PPhM6/IDogIiArIHNvdXJjZV9zaXRlX3RpdGxlICsgIi4i
+ICsKCQkiPGJyIC8+PGJyIC8+zpPOuc6xIM+EzrfOvSDPhc+Az4zOuM61z4POtyDOrc+HzrXOuSDO
+tc66zrTOv864zrXOryDOvyDOsc+BzrnOuM68z4zPgiDPgM+Bz4nPhM6/zrrPjM67zrvOv8+FIDog
+IiArIHByb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251
+bWJlci5zcGxpdCgiXyIpWzFdICsKCQkiPGJyIC8+zqTOsSDOsc+Bz4fOtc6vzrEgz4TOt8+CIM+F
+z4DPjM64zrXPg863z4IgzrzPgM6/z4HOv8+Nzr0gzr3OsSDOss+BzrXOuM6/z43OvSDPg8+Ezr8g
+z4PPjc69zrTOtc+DzrzOvyA6IDxhIGhyZWY9XCIiK3VybCsiXCIiKyI+zpHPgc+HzrXOr86xIM6l
+z4DPjM64zrXPg863z4I8L2E+IisKCQkiPGJyIC8+PGJyIC8+zp/OuSDOtc+AzrnOu861zrPOvM6t
+zr3Ov865IM+AzrHPgc6xzrvOrs+Az4TOtc+CIM61zq/Ovc6xzrkgOiAiK3NlbGVjdGVkX3JlY2lw
+aWVudC50b1N0cmluZygpKwoJCSI8YnIgLz48YnIgLz7On865IM61z4DOuc67zrXOs868zq3Ovc61
+z4IgzrrOv865zr3Ov8+Azr/Ouc6uz4POtc65z4IgzrXOr869zrHOuSA6ICIrc2VsZWN0ZWRfbm90
+aWZpY2F0aW9uLnRvU3RyaW5nKCk7CmVsc2UgcmV0dXJuICLOtyDOv8+Azr/Or86xIM6+zrXOus6v
+zr3Ot8+DzrUgzrHPgM+MIM+Ezr/OvSDOtc65z4POt86zzrfPhM6uIDogIiArIGVtcGxveWVlX2F0
+dHJpYnV0ZXNbJ2NuJ10udG9TdHJpbmcoKS50cmltKCkgKyAiLCDOvyDOv8+Azr/Or86/z4IgzrHO
+vc6uzrrOtc65IM+Dz4TOty/Pg8+Ezr8gOiAiICsgc291cmNlX3NpdGVfdGl0bGUgKyAiLiIgKwoJ
+CQkgICI8YnIgLz48YnIgLz7Ok865zrEgz4TOt869IM+Fz4DPjM64zrXPg863IM6tz4fOtc65IM61
+zrrOtM6/zrjOtc6vIM6/IM6xz4HOuc64zrzPjM+CIM+Az4HPic+Ezr/Ous+MzrvOu86/z4UgOiAi
+ICsgcHJvdG9jb2xfbnVtYmVyLnNwbGl0KCJfIilbMF0rIiAiKyItIisiICIrcHJvdG9jb2xfbnVt
+YmVyLnNwbGl0KCJfIilbMV0gKwoJICAgCQkgICI8YnIgLz7OpM6xIM6xz4HPh861zq/OsSDPhM63
+z4Igz4XPgM+MzrjOtc+DzrfPgiDOvM+Azr/Pgc6/z43OvSDOvc6xIM6yz4HOtc64zr/Pjc69IM+D
+z4TOvyDPg8+Nzr3OtM61z4POvM6/IDogPGEgaHJlZj1cIiIrdXJsKyJcIiIrIj7Okc+Bz4fOtc6v
+zrEgzqXPgM+MzrjOtc+DzrfPgjwvYT4iKwogICAgICAgICAgIAkJICAiPGJyIC8+PGJyIC8+zp/O
+uSDOtc+AzrnOu861zrPOvM6tzr3Ov865IM+AzrHPgc6xzrvOrs+Az4TOtc+CIM61zq/Ovc6xzrkg
+OiAiK3NlbGVjdGVkX3JlY2lwaWVudC50b1N0cmluZygpOwp9CjxiciAvPjxiciAvPgrOlc69zrfO
+vM61z4HPjs+Dz4TOtSDPhM6/zr0gzpTOuc6xz4fOtc65z4HOuc+Dz4TOriDOly/OlCDPg8+EzrfO
+vSAizpTOuc61z43OuM+Fzr3Pg863IM6Vz4DOuc+HzrXOuc+BzrfPg865zrHOus6/z40gzqPPh861
+zrTOuc6xz4POvM6/z40sIM6fz4HOs86szr3Pic+DzrfPgiAmIM6gzrvOt8+Bzr/Phs6/z4HOuc66
+zq7PgiIgzrPOuc6xIM+EzrfOvSDOtc+Azq/Ou8+Fz4POtyDPhM6/z4Ugz4DPgc6/zrLOu86uzrzO
+sc+Ezr/PgiDPg8+Ezr8gzrHOus+MzrvOv8+FzrjOvyAgZW1haWwgOiA8aT48Zm9udCBjb2xvcj0i
+Ymx1ZSI+aGVscC5oZGVAYXRoZW5zLmdyPC9mb250PjwvaT4KPGJyIC8+PGJyIC8+Cs6kzr8gZW1h
+aWwgzrHPhc+Ez4wgzq3Ph861zrkgzrHPgM6/z4PPhM6xzrvOtc6vIM6xz4DPjCDOu86/zrPOsc+B
+zrnOsc+DzrzPjCDPgM6/z4UgzrTOtc69IM60zq3Ph861z4TOsc65IM6xz4DOsc69z4TOrs+DzrXO
+uc+CLjxiciAvPg==</parameter>
+              <parameter name="setSslSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setTimeout">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAUzMDAwMA==</parameter>
+              <parameter name="setUserName">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAlkZS5tYWlsZXI=</parameter>
+              <parameter name="setStarttlsSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setReplyTo"></parameter>
+              <parameter name="setTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABIke2luaXRpYXRv
+cl9lbWFpbH0=</parameter>
+              <parameter name="setSmtpPort">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAIyNQ==</parameter>
+              <parameter name="setSmtpHost">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA5tYWlsLmF0aGVu
+cy5ncg==</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>taskOnFinish</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AB9zdWJyb3V0aW5l
+X2Vycm9yX2V2ZW50Kz0idHJ1ZSI7</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines>
+          <deadline>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <condition>86400000</condition>
+            <description/>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ANFTeXN0ZW0ub3V0
+LnByaW50bG4oIlRhc2sgYXV0b0NvbXBsZXRlZCBkdWUgMiBsb25nIGlkbGUgdGltZSIpOw1hcGlB
+Y2Nlc3Nvci5nZXRSdW50aW1lQVBJKCkuc3RhcnRUYXNrKGFjdGl2aXR5SW5zdGFuY2UuZ2V0VVVJ
+RCgpLCB0cnVlKTsNYXBpQWNjZXNzb3IuZ2V0UnVudGltZUFQSSgpLmZpbmlzaFRhc2soYWN0aXZp
+dHlJbnN0YW5jZS5nZXRVVUlEKCksIHRydWUpOw==</parameter>
+            </parameters>
+          </deadline>
+        </deadlines>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="aggregation_initial_folder_year_month_folder_gateway">
+        <label>aggregation initial_folder_year_month folder gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="email_notification_of_president_and_agents_for_radweriel_error">
+        <label>Ενημέρωση Γραμματείας και Προέδρου για Λάθος Radweriel</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Human</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers>
+          <performer>error_viewer</performer>
+        </performers>
+        <connectors>
+          <connector>
+            <classname>org.bonitasoft.connectors.email.EmailConnector</classname>
+            <description/>
+            <event>taskOnReady</event>
+            <throw-exception>false</throw-exception>
+            <parameters>
+              <parameter name="setHeaders">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setAttachments">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setCharset">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAV1dGYtOA==</parameter>
+              <parameter name="setPassword">
+</parameter>
+              <parameter name="setBcc"></parameter>
+              <parameter name="setSubject">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ALoke3Byb3RvY29s
+X251bWJlci5zcGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgi
+XyIpWzFdfSAtLS0gzpHPgM+Bz4zPg868zrXOvc6/IM67zqzOuM6/z4IgzrrOsc+Ezqwgz4TOtyDO
+tM65zrHOtM65zrrOsc+Dzq/OsSDOrc6zzrrPgc65z4POt8+CIM+EzrfPgiDOlc65z4POrs6zzrfP
+g863z4I=</parameter>
+              <parameter name="setFrom">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setCc"></parameter>
+              <parameter name="setHtml">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAB</parameter>
+              <parameter name="setMessage">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0A7POlyDOtc65z4PO
+rs6zzrfPg863IM68zrUgzrHPgc65zrjOvM+MIM+Az4HPic+Ezr/Ous+MzrvOu86/z4U6ICR7cHJv
+dG9jb2xfbnVtYmVyLnNwbGl0KCJfIilbMF0rIiAiKyItIisiICIrcHJvdG9jb2xfbnVtYmVyLnNw
+bGl0KCJfIilbMV19IM66zrHOuSDOuM6tzrzOsTogJHt0aGVtZX0gPGJyIC8+Cs6tz4fOtc65IM61
+zrPOus+BzrnOuM61zq8gzrHPgM+MIM+Ezr/OvSDOoM+Bz4zOtc60z4HOvyDOs865zrEgzr3OsSDO
+tc65z4POsc+HzrjOtc6vIM+Dz4TOt869IM6XzrzOtc+Bzq7Pg865zrEgzpTOuc6sz4TOsc6+zrcu
+CjxiciAvPjxiciAvPgrOqc+Dz4TPjM+Dzr8gz4DOsc+Bzr/Phc+DzrnOrM+Dz4TOt866zrUgzq3O
+vc6xIM6xz4DPgc+Mz4POvM61zr3OvyDOu86szrjOv8+CIM+Dz4TOv869IFNlcnZlciDOsc+Azr/O
+uM6uzrrOtc+Fz4POt8+CIM+Ez4nOvSDOsc+Bz4fOtc6vz4nOvSAnUmFkd2VyaWVsJy4KPGJyIC8+
+PGJyIC8+Cs6Vzr3Ot868zrXPgc+Oz4PPhM61IM+Ezr/OvSDOlM65zrHPh861zrnPgc65z4PPhM6u
+IM6XL86UIM+Dz4TOt869ICLOlM65zrXPjc64z4XOvc+DzrcgzpXPgM65z4fOtc65z4HOt8+DzrnO
+sc66zr/PjSDOo8+HzrXOtM65zrHPg868zr/PjSwgzp/Pgc6zzqzOvc+Jz4POt8+CICYgzqDOu863
+z4HOv8+Gzr/Pgc65zrrOrs+CIiDOs865zrEgz4TOt869IM61z4DOr867z4XPg863IM+Ezr/PhSDP
+gM+Bzr/Oss67zq7OvM6xz4TOv8+CIM+Dz4TOvyDOsc66z4zOu86/z4XOuM6/ICBlbWFpbCA6IDxp
+Pjxmb250IGNvbG9yPSJibHVlIj5oZWxwLmhkZUBhdGhlbnMuZ3I8L2ZvbnQ+PC9pPgo8YnIgLz48
+YnIgLz4KzqTOvyBlbWFpbCDOsc+Fz4TPjCDOrc+HzrXOuSDOsc+Azr/Pg8+EzrHOu861zq8gzrHP
+gM+MIM67zr/Os86xz4HOuc6xz4POvM+MIM+Azr/PhSDOtM61zr0gzrTOrc+HzrXPhM6xzrkgzrHP
+gM6xzr3PhM6uz4POtc65z4IuPGJyIC8+Cg==</parameter>
+              <parameter name="setSslSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setTimeout">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAUzMDAwMA==</parameter>
+              <parameter name="setUserName">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAlkZS5tYWlsZXI=</parameter>
+              <parameter name="setStarttlsSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setReplyTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke2FnZW50c19l
+bWFpbH0=</parameter>
+              <parameter name="setSmtpPort">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAIyNQ==</parameter>
+              <parameter name="setSmtpHost">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA5tYWlsLmF0aGVu
+cy5ncg==</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>taskOnFinish</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AB9zdWJyb3V0aW5l
+X2Vycm9yX2V2ZW50Kz0idHJ1ZSI7</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines>
+          <deadline>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <condition>86400000</condition>
+            <description/>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ANFTeXN0ZW0ub3V0
+LnByaW50bG4oIlRhc2sgYXV0b0NvbXBsZXRlZCBkdWUgMiBsb25nIGlkbGUgdGltZSIpOw1hcGlB
+Y2Nlc3Nvci5nZXRSdW50aW1lQVBJKCkuc3RhcnRUYXNrKGFjdGl2aXR5SW5zdGFuY2UuZ2V0VVVJ
+RCgpLCB0cnVlKTsNYXBpQWNjZXNzb3IuZ2V0UnVudGltZUFQSSgpLmZpbmlzaFRhc2soYWN0aXZp
+dHlJbnN0YW5jZS5nZXRVVUlEKCksIHRydWUpOw==</parameter>
+            </parameters>
+          </deadline>
+        </deadlines>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="terminate_due_2_ldap_error">
+        <label>Τερματισμός λόγω λάθους στον LDAP</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>true</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="Terminate_End_Event2">
+        <label>Terminate_End_Event2</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>true</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="creation_of_month_day_folder">
+        <label>Δημιουργία Φακέλου Μήνας - Μέρα</label>
+        <description>Δημιουργεί φάκελο με ονόμα τον τρέχοντα "Μήνα" και "Μέρα" μέσα στον υποφάκελο "Έτος"του αρχικού φακέλου</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AIcke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwo
+JyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJl
+cGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error6">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="emails_gateway">
+        <label>emails gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_day_folder_gateway">
+        <label>check day folder gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="visual_radweriel_error">
+        <label>Λάθος σε radweriel</label>
+        <description>Ενημέρωση για απρόσμενο λάθος σε σύστημα Η/Δ O διαχειριστής θα πρέπει να επιδιορθώσει το πρόβλημα και να επιστρέψει την ροή σε προηγούμενο βήμα.</description>
+        <dynamic-label>Ενημέρωση για</dynamic-label>
+        <dynamic-description>λάθος στον Server Διαχείρισης Αρχείων Radweriel</dynamic-description>
+        <dynamic-execution-summary>Η ενημέρωση για λάθος στον Server Διαχείρισης Αρχείων Radweriel έχει ολοκληρωθεί. Η διαδικασία τερματίστηκε ανεπιτυχώς.</dynamic-execution-summary>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Human</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers>
+          <performer>error_viewer</performer>
+        </performers>
+        <connectors>
+          <connector>
+            <classname>org.bonitasoft.connectors.email.EmailConnector</classname>
+            <description/>
+            <event>taskOnReady</event>
+            <throw-exception>false</throw-exception>
+            <parameters>
+              <parameter name="setHeaders">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setAttachments">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgATamF2YS51dGls
+LkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHg=</parameter>
+              <parameter name="setCharset">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAV1dGYtOA==</parameter>
+              <parameter name="setPassword">
+</parameter>
+              <parameter name="setBcc"></parameter>
+              <parameter name="setSubject">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA9yYWR3ZXJpZWwg
+RVJST1I=</parameter>
+              <parameter name="setFrom">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABFub3JlcGx5QGF0
+aGVucy5ncg==</parameter>
+              <parameter name="setCc"></parameter>
+              <parameter name="setHtml">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAB</parameter>
+              <parameter name="setMessage">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0DT7OoM6xz4HOv8+F
+z4POuc6sz4PPhM63zrrOtSDOsc+Az4HPjM+DzrzOtc69zr8gzrvOrM64zr/PgiDPg8+Ezr/OvSBT
+ZXJ2ZXIgzrHPgM6/zrjOrs66zrXPhc+DzrfPgiDPhM+Jzr0gzrHPgc+HzrXOr8+Jzr0gJ1JhZHdl
+cmllbCcgz4PPhM63zr0gz4XPgM+MzrjOtc+Dzrc6ICR7cHJvY2Vzc0luc3RhbmNlLmdldFBhcmVu
+dEluc3RhbmNlVVVJRCgpLnRvU3RyaW5nKCl9CjxiciAvPgoke2ltcG9ydCBqYXZhLm5ldC5VUkxF
+bmNvZGVyOwoKZGVmIHRlbXAxID0gVVJMRW5jb2Rlci5lbmNvZGUoIs6gz4HOv8+Dz4nPgc65zr3O
+rCDOkc+Bz4fOtc6vzrEiLCAiVVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNl
+QWxsKCclMkYnLCcvJyk7CmRlZiB1cmwgPSAiaHR0cDovLyIrYWxmcmVzY29faG9zdCsiOjgwODAv
+c2hhcmUvcGFnZS9yZXBvc2l0b3J5I2ZpbHRlcj1wYXRoJTdDJTJGU2l0ZXMlMkYiK3NvdXJjZV9z
+aXRlKyIlMkZkb2N1bWVudExpYnJhcnklMkYiK3RlbXAxKyIlMkYiK3RlbXBvcmFyeV9mb2xkZXJf
+bmFtZSsiJTdDJnBhZ2U9MSI7CmRlZiBlbXBsb3llZV9hdHRyaWJ1dGVzID0gYXBpQWNjZXNzb3Iu
+Z2V0UXVlcnlSdW50aW1lQVBJKCkuZ2V0UHJvY2Vzc0luc3RhbmNlVmFyaWFibGUocHJvY2Vzc0lu
+c3RhbmNlLmdldFBhcmVudEluc3RhbmNlVVVJRCgpLCAiZW1wbG95ZWVfYXR0cmlidXRlcyIpOwpk
+ZWYgc2VsZWN0ZWRfcmVjaXBpZW50ID0gYXBpQWNjZXNzb3IuZ2V0UXVlcnlSdW50aW1lQVBJKCku
+Z2V0UHJvY2Vzc0luc3RhbmNlVmFyaWFibGUocHJvY2Vzc0luc3RhbmNlLmdldFBhcmVudEluc3Rh
+bmNlVVVJRCgpLCAic2VsZWN0ZWRfcmVjaXBpZW50Iik7CmRlZiBzZWxlY3RlZF9ub3RpZmljYXRp
+b24gPSBhcGlBY2Nlc3Nvci5nZXRRdWVyeVJ1bnRpbWVBUEkoKS5nZXRQcm9jZXNzSW5zdGFuY2VW
+YXJpYWJsZShwcm9jZXNzSW5zdGFuY2UuZ2V0UGFyZW50SW5zdGFuY2VVVUlEKCksICJzZWxlY3Rl
+ZF9ub3RpZmljYXRpb24iKTsKaWYocHJvdG9jb2xfbnVtYmVyICkgewppZihzZWxlY3RlZF9ub3Rp
+ZmljYXRpb24pCnJldHVybiAizrcgzr/PgM6/zq/OsSDOvs61zrrOr869zrfPg861IM6xz4DPjCDP
+hM6/zr0gzrXOuc+DzrfOs863z4TOriA6ICIgKyBlbXBsb3llZV9hdHRyaWJ1dGVzWydjbiddLnRv
+U3RyaW5nKCkudHJpbSgpICsgIiwgzr8gzr/PgM6/zq/Ov8+CIM6xzr3Ors66zrXOuSDPg8+Ezrcv
+z4PPhM6/IDogIiArIHNvdXJjZV9zaXRlX3RpdGxlICsgIi4iICsKCQkiPGJyIC8+PGJyIC8+zpPO
+uc6xIM+EzrfOvSDPhc+Az4zOuM61z4POtyDOrc+HzrXOuSDOtc66zrTOv864zrXOryDOvyDOsc+B
+zrnOuM68z4zPgiDPgM+Bz4nPhM6/zrrPjM67zrvOv8+FIDogIiArIHByb3RvY29sX251bWJlci5z
+cGxpdCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzFdICsK
+CQkiPGJyIC8+zqTOsSDOsc+Bz4fOtc6vzrEgz4TOt8+CIM+Fz4DPjM64zrXPg863z4IgzrzPgM6/
+z4HOv8+Nzr0gzr3OsSDOss+BzrXOuM6/z43OvSDPg8+Ezr8gz4PPjc69zrTOtc+DzrzOvyA6IDxh
+IGhyZWY9XCIiK3VybCsiXCIiKyI+zpHPgc+HzrXOr86xIM6lz4DPjM64zrXPg863z4I8L2E+IisK
+CQkiPGJyIC8+PGJyIC8+zp/OuSDOtc+AzrnOu861zrPOvM6tzr3Ov865IM+AzrHPgc6xzrvOrs+A
+z4TOtc+CIM61zq/Ovc6xzrkgOiAiK3NlbGVjdGVkX3JlY2lwaWVudC50b1N0cmluZygpKwoJCSI8
+YnIgLz48YnIgLz7On865IM61z4DOuc67zrXOs868zq3Ovc61z4IgzrrOv865zr3Ov8+Azr/Ouc6u
+z4POtc65z4IgzrXOr869zrHOuSA6ICIrc2VsZWN0ZWRfbm90aWZpY2F0aW9uLnRvU3RyaW5nKCk7
+CmVsc2UgcmV0dXJuICLOtyDOv8+Azr/Or86xIM6+zrXOus6vzr3Ot8+DzrUgzrHPgM+MIM+Ezr/O
+vSDOtc65z4POt86zzrfPhM6uIDogIiArIGVtcGxveWVlX2F0dHJpYnV0ZXNbJ2NuJ10udG9TdHJp
+bmcoKS50cmltKCkgKyAiLCDOvyDOv8+Azr/Or86/z4IgzrHOvc6uzrrOtc65IM+Dz4TOty/Pg8+E
+zr8gOiAiICsgc291cmNlX3NpdGVfdGl0bGUgKyAiLiIgKwoJCQkiPGJyIC8+PGJyIC8+zpPOuc6x
+IM+EzrfOvSDPhc+Az4zOuM61z4POtyDOrc+HzrXOuSDOtc66zrTOv864zrXOryDOvyDOsc+BzrnO
+uM68z4zPgiDPgM+Bz4nPhM6/zrrPjM67zrvOv8+FIDogIiArIHByb3RvY29sX251bWJlci5zcGxp
+dCgiXyIpWzBdKyIgIisiLSIrIiAiK3Byb3RvY29sX251bWJlci5zcGxpdCgiXyIpWzFdICsKCSAg
+IAkJIjxiciAvPs6kzrEgzrHPgc+HzrXOr86xIM+EzrfPgiDPhc+Az4zOuM61z4POt8+CIM68z4DO
+v8+Bzr/Pjc69IM69zrEgzrLPgc61zrjOv8+Nzr0gz4PPhM6/IM+Dz43Ovc60zrXPg868zr8gOiA8
+YSBocmVmPVwiIit1cmwrIlwiIisiPs6Rz4HPh861zq/OsSDOpc+Az4zOuM61z4POt8+CPC9hPiIr
+CiAgICAgICAgICAgIAkJIjxiciAvPjxiciAvPs6fzrkgzrXPgM65zrvOtc6zzrzOrc69zr/OuSDP
+gM6xz4HOsc67zq7PgM+EzrXPgiDOtc6vzr3Osc65IDogIitzZWxlY3RlZF9yZWNpcGllbnQudG9T
+dHJpbmcoKTsKfWVsc2UgcmV0dXJuICLOtyDOv8+Azr/Or86xIM6+zrXOus6vzr3Ot8+DzrUgzrHP
+gM+MIM+Ezr/OvSDOtc65z4POt86zzrfPhM6uIDogIiArIGVtcGxveWVlX2F0dHJpYnV0ZXNbJ2Nu
+J10udG9TdHJpbmcoKS50cmltKCkgKyAiLCDOvyDOv8+Azr/Or86/z4IgzrHOvc6uzrrOtc65IM+D
+z4TOty/Pg8+Ezr8gOiAiICsgc291cmNlX3NpdGVfdGl0bGUgKyAKCQkJICAiPGJyIC8+zqTOsSDO
+sc+Bz4fOtc6vzrEgz4TOt8+CIM+Fz4DPjM64zrXPg863z4IgzrzPgM6/z4HOv8+Nzr0gzr3OsSDO
+ss+BzrXOuM6/z43OvSDPg8+Ezr8gz4PPjc69zrTOtc+DzrzOvyA6IDxhIGhyZWY9XCIiK3VybCsi
+XCIiKyI+zpHPgc+HzrXOr86xIM6lz4DPjM64zrXPg863z4I8L2E+IjsKfQo8YnIgLz48YnIgLz4K
+zpXOvc63zrzOtc+Bz47Pg8+EzrUgz4TOv869IM6UzrnOsc+HzrXOuc+BzrnPg8+Ezq4gzpcvzpQg
+z4PPhM63zr0gIs6UzrnOtc+NzrjPhc69z4POtyDOlc+AzrnPh861zrnPgc63z4POuc6xzrrOv8+N
+IM6jz4fOtc60zrnOsc+DzrzOv8+NLCDOn8+BzrPOrM69z4nPg863z4IgJiDOoM67zrfPgc6/z4bO
+v8+BzrnOus6uz4IiIM6zzrnOsSDPhM63zr0gzrXPgM6vzrvPhc+Dzrcgz4TOv8+FIM+Az4HOv86y
+zrvOrs68zrHPhM6/z4Igz4PPhM6/IM6xzrrPjM67zr/Phc64zr8gIGVtYWlsIDogPGk+PGZvbnQg
+Y29sb3I9ImJsdWUiPmhlbHAuaGRlQGF0aGVucy5ncjwvZm9udD48L2k+CjxiciAvPjxiciAvPgrO
+pM6/IGVtYWlsIM6xz4XPhM+MIM6tz4fOtc65IM6xz4DOv8+Dz4TOsc67zrXOryDOsc+Az4wgzrvO
+v86zzrHPgc65zrHPg868z4wgz4DOv8+FIM60zrXOvSDOtM6tz4fOtc+EzrHOuSDOsc+AzrHOvc+E
+zq7Pg861zrnPgi48YnIgLz4=</parameter>
+              <parameter name="setSslSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setTimeout">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAUzMDAwMA==</parameter>
+              <parameter name="setUserName">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAlkZS5tYWlsZXI=</parameter>
+              <parameter name="setStarttlsSupport">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAFzcgARamF2YS5sYW5n
+LkJvb2xlYW7NIHKA1Zz67gIAAVoABXZhbHVleHAA</parameter>
+              <parameter name="setReplyTo"></parameter>
+              <parameter name="setTo">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABIke2luaXRpYXRv
+cl9lbWFpbH0=</parameter>
+              <parameter name="setSmtpPort">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAIyNQ==</parameter>
+              <parameter name="setSmtpHost">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA5tYWlsLmF0aGVu
+cy5ncg==</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <description/>
+            <event>taskOnFinish</event>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AB9zdWJyb3V0aW5l
+X2Vycm9yX2V2ZW50Kz0idHJ1ZSI7</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines>
+          <deadline>
+            <classname>org.bonitasoft.connectors.scripting.GroovyConnector</classname>
+            <condition>86400000</condition>
+            <description/>
+            <throw-exception>true</throw-exception>
+            <parameters>
+              <parameter name="setScript">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ANFTeXN0ZW0ub3V0
+LnByaW50bG4oIlRhc2sgYXV0b0NvbXBsZXRlZCBkdWUgMiBsb25nIGlkbGUgdGltZSIpOw1hcGlB
+Y2Nlc3Nvci5nZXRSdW50aW1lQVBJKCkuc3RhcnRUYXNrKGFjdGl2aXR5SW5zdGFuY2UuZ2V0VVVJ
+RCgpLCB0cnVlKTsNYXBpQWNjZXNzb3IuZ2V0UnVudGltZUFQSSgpLmZpbmlzaFRhc2soYWN0aXZp
+dHlJbnN0YW5jZS5nZXRVVUlEKCksIHRydWUpOw==</parameter>
+            </parameters>
+          </deadline>
+        </deadlines>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_month_folder_in_year_of_given_folder">
+        <label>Έλεγχος Φακέλου "Μήνα" στον φάκελο "Έτος"</label>
+        <description>Ελέγχει αν υπάρχει ο φάκελος με το όνομα του τρέχοντος "Μήνα" μέσα στο φάκελο "Έτος" στον φάκελο που δίνεται από την αρχική ροή</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>TestGivenTitleInAlfFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setPath">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AIcke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwo
+JyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="month_name_exist">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke2ZvbGRlcl9m
+b3VuZH0=</parameter>
+              <parameter name="setName_2_check">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error5">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="check_day_folder_in_month_folder">
+        <label>Έλεγχος Φακέλου "Μέρας" στον φάκελο "Μήνας"</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>TestGivenTitleInAlfFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="day_name_exist">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA8ke2ZvbGRlcl9m
+b3VuZH0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setPath">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJl
+cGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setName_2_check">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error14">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="Terminate_End_Event1">
+        <label>Terminate_End_Event1</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>true</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="attached_files_folder_has_children">
+        <label>attached_files_folder_has_children</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>XOR</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="creation_of_folders_given_folder_year_month_day">
+        <label>Δημιουργία Φακέλων: "Φάκελος που δίνεται από την αρχική ροή"  - Έτος - Μήνας-Μέρα</label>
+        <description>Δημιουργεί φάκελους με ονόματα: "Φάκελος που δίνεται από την αρχική ροή"", το τρέχον "Έτος", τον τρέχοντα "Μήνα" και την "Μέρα" μέσα στο site της Δ/νσης</description>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AHAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkiLCAiVVRGLTgiKS5y
+ZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcvJyl9</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke2ZvbGRlcl9u
+YW1lfQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke2ZvbGRlcl9u
+YW1lfQ==</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AA4ke2ZvbGRlcl9u
+YW1lfQ==</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnEnter</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AH8ke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0iLCAiVVRGLTgiKS5yZXBsYWNlQWxsKCdcXCsnLCclMjAnKS5yZXBsYWNlQWxsKCclMkYnLCcv
+Jyl9</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAcke3llYXJ9</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AIcke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJlcGxhY2VBbGwo
+JyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAgke21vbnRofQ==</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+          <connector>
+            <classname>CreateFolder</classname>
+            <description/>
+            <event>automaticOnExit</event>
+            <throw-exception>true</throw-exception>
+            <error-code>radweriel_error</error-code>
+            <parameters>
+              <parameter name="setRoot_path">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AJAke1VSTEVuY29k
+ZXIuZW5jb2RlKCIvU2l0ZXMvJHtvdV9zaXRlfS9kb2N1bWVudExpYnJhcnkvJHtmb2xkZXJfbmFt
+ZX0vJHt5ZWFyfS8ke21vbnRofSIsICJVVEYtOCIpLnJlcGxhY2VBbGwoJ1xcKycsJyUyMCcpLnJl
+cGxhY2VBbGwoJyUyRicsJy8nKX0=</parameter>
+              <parameter name="setAlfresco_host">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABAke2FsZnJlc2Nv
+X2hvc3R9</parameter>
+              <parameter name="setFolder_description">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_port">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAQ4MDgw</parameter>
+              <parameter name="setFolder_title">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setFolder_name">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0AAYke2RheX0=</parameter>
+              <parameter name="setAlfresco_username">rO0ABXVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAF0ABB2LmFsZnJlc2Nv
+c3lzdGVt</parameter>
+              <parameter name="setAlfresco_password">
+</parameter>
+            </parameters>
+          </connector>
+        </connectors>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events>
+          <timers/>
+          <messages/>
+          <errors>
+            <error name="radweriel_error2">
+              <error-code>radweriel_error</error-code>
+            </error>
+          </errors>
+          <signals/>
+        </boundary-events>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+      <activity name="cc_fc_lfc_gateway">
+        <label>cc_fc_lfc_gateway</label>
+        <description/>
+        <priority>0</priority>
+        <executing-time>0</executing-time>
+        <split-type>AND</split-type>
+        <join-type>XOR</join-type>
+        <type>Automatic</type>
+        <asynchronous>false</asynchronous>
+        <terminate-process>false</terminate-process>
+        <performers/>
+        <connectors/>
+        <data-fields/>
+        <deadlines/>
+        <outgoing-events/>
+        <boundary-events/>
+        <subflow-in-parameters/>
+        <subflow-out-parameters/>
+      </activity>
+    </activities>
+    <transitions>
+      <transition name="check_year_folder_in_given_folder__radweriel_error3__visual_radweriel_error">
+        <description/>
+        <from>check_year_folder_in_given_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error3</boundary-event>
+      </transition>
+      <transition name="get_emails_from_agent_in_ldap_and_notify_ou__ldap_error1__visual_ldap_error">
+        <description/>
+        <from>get_emails_from_agent_in_ldap_and_notify_ou</from>
+        <to>visual_ldap_error</to>
+        <is-default>false</is-default>
+        <boundary-event>ldap_error1</boundary-event>
+      </transition>
+      <transition name="check_year_folder_gateway__creation_of_folders_year_month_day_in_given_folder">
+        <condition>year_name_exist==false</condition>
+        <description/>
+        <from>check_year_folder_gateway</from>
+        <to>creation_of_folders_year_month_day_in_given_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_month_day_folder__radweriel_error6__visual_radweriel_error">
+        <description/>
+        <from>creation_of_month_day_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error6</boundary-event>
+      </transition>
+      <transition name="count_object_2_be_copied_children__Copy_folder_with_files">
+        <description/>
+        <from>count_object_2_be_copied_children</from>
+        <to>Copy_folder_with_files</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_given_folder__radweriel_error1__visual_radweriel_error">
+        <description/>
+        <from>check_given_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error1</boundary-event>
+      </transition>
+      <transition name="check_day_folder_gateway__cc_fc_lfc_gateway">
+        <condition>day_name_exist==true</condition>
+        <description/>
+        <from>check_day_folder_gateway</from>
+        <to>cc_fc_lfc_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="Copy_folder_with_files__radweriel_error8__visual_radweriel_error">
+        <description/>
+        <from>Copy_folder_with_files</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error8</boundary-event>
+      </transition>
+      <transition name="check_month_folder_gateway__check_day_folder_in_month_folder">
+        <condition>month_name_exist==true</condition>
+        <description/>
+        <from>check_month_folder_gateway</from>
+        <to>check_day_folder_in_month_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="rename_copied_folder_with_protocol_number__radweriel_error10__visual_radweriel_error">
+        <description/>
+        <from>rename_copied_folder_with_protocol_number</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error10</boundary-event>
+      </transition>
+      <transition name="recipients_and_notifications_create_case_folder__attached_files_folder_has_children">
+        <description/>
+        <from>recipients_and_notifications_create_case_folder</from>
+        <to>attached_files_folder_has_children</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_month_folder_gateway__creation_of_month_day_folder">
+        <condition>month_name_exist==false</condition>
+        <description/>
+        <from>check_month_folder_gateway</from>
+        <to>creation_of_month_day_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="attached_files_folder_has_children__create_link_2_attached_files_folder">
+        <condition>attached_files_folder_has_children==true</condition>
+        <description/>
+        <from>attached_files_folder_has_children</from>
+        <to>create_link_2_attached_files_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_month_folder_in_year_of_given_folder__check_month_folder_gateway">
+        <description/>
+        <from>check_month_folder_in_year_of_given_folder</from>
+        <to>check_month_folder_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="move_temporary_folder_in_rejected_files__Terminate_End_Event2">
+        <description/>
+        <from>move_temporary_folder_in_rejected_files</from>
+        <to>Terminate_End_Event2</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_day_folder_in_month_folder__check_day_folder_gateway">
+        <description/>
+        <from>check_day_folder_in_month_folder</from>
+        <to>check_day_folder_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_year_folder_in_given_folder__check_year_folder_gateway">
+        <description/>
+        <from>check_year_folder_in_given_folder</from>
+        <to>check_year_folder_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_folders_given_folder_year_month_day__cc_fc_lfc_gateway">
+        <description/>
+        <from>creation_of_folders_given_folder_year_month_day</from>
+        <to>cc_fc_lfc_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="automations__check_given_folder">
+        <description/>
+        <from>automations</from>
+        <to>check_given_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="move_folder_2_approved_cases_cc_fc_qol__Terminate_End_Event3">
+        <description/>
+        <from>move_folder_2_approved_cases_cc_fc_qol</from>
+        <to>Terminate_End_Event3</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_day_folder_gateway__creation_of_day_folder">
+        <condition>day_name_exist==false</condition>
+        <description/>
+        <from>check_day_folder_gateway</from>
+        <to>creation_of_day_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_folders_year_month_day_in_given_folder__cc_fc_lfc_gateway">
+        <description/>
+        <from>creation_of_folders_year_month_day_in_given_folder</from>
+        <to>cc_fc_lfc_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_folders_given_folder_year_month_day__radweriel_error2__visual_radweriel_error">
+        <description/>
+        <from>creation_of_folders_given_folder_year_month_day</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error2</boundary-event>
+      </transition>
+      <transition name="count_object_2_be_copied_children__radweriel_error11__visual_radweriel_error">
+        <description/>
+        <from>count_object_2_be_copied_children</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error11</boundary-event>
+      </transition>
+      <transition name="Start1__automations">
+        <description/>
+        <from>Start1</from>
+        <to>automations</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_month_folder_in_year_of_given_folder__radweriel_error5__visual_radweriel_error">
+        <description/>
+        <from>check_month_folder_in_year_of_given_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error5</boundary-event>
+      </transition>
+      <transition name="cc_fc_lfc_gateway__aggregation_initial_folder_year_month_folder_gateway">
+        <condition>folder_name!="Εγκεκριμένα";</condition>
+        <description/>
+        <from>cc_fc_lfc_gateway</from>
+        <to>aggregation_initial_folder_year_month_folder_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_month_day_folder__cc_fc_lfc_gateway">
+        <description/>
+        <from>creation_of_month_day_folder</from>
+        <to>cc_fc_lfc_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="evaluate_number_of_children_of_copied_object__radweriel_error12__visual_radweriel_error">
+        <description/>
+        <from>evaluate_number_of_children_of_copied_object</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error12</boundary-event>
+      </transition>
+      <transition name="move_folder_2_approved_cases_cc_fc_qol__radweriel_error16__email_notification_of_president_and_agents_for_radweriel_error">
+        <description/>
+        <from>move_folder_2_approved_cases_cc_fc_qol</from>
+        <to>email_notification_of_president_and_agents_for_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error16</boundary-event>
+      </transition>
+      <transition name="check_initial_folder_gateway__check_year_folder_in_given_folder">
+        <condition>folder_name_exist==true</condition>
+        <description/>
+        <from>check_initial_folder_gateway</from>
+        <to>check_year_folder_in_given_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="aggregation_initial_folder_year_month_folder_gateway__recipients_and_notifications_create_case_folder">
+        <condition>(approval==1)&amp;&amp;(folder_name!="Πρωτοκολλημένα")</condition>
+        <description/>
+        <from>aggregation_initial_folder_year_month_folder_gateway</from>
+        <to>recipients_and_notifications_create_case_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="Copy_folder_with_files__evaluate_number_of_children_of_copied_object">
+        <description/>
+        <from>Copy_folder_with_files</from>
+        <to>evaluate_number_of_children_of_copied_object</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="recipients_and_notifications_create_case_folder__radweriel_error13__visual_radweriel_error">
+        <description/>
+        <from>recipients_and_notifications_create_case_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error13</boundary-event>
+      </transition>
+      <transition name="check_given_folder__check_initial_folder_gateway">
+        <description/>
+        <from>check_given_folder</from>
+        <to>check_initial_folder_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="emails_gateway__get_emails_from_agent_in_ldap_and_notify_ou">
+        <condition>(folder_name != "Απεσταλμένα")&amp;&amp;(folder_name != "Πρωτοκολλημένα")</condition>
+        <description/>
+        <from>emails_gateway</from>
+        <to>get_emails_from_agent_in_ldap_and_notify_ou</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="evaluate_number_of_children_of_copied_object__rename_copied_folder_with_protocol_number">
+        <description/>
+        <from>evaluate_number_of_children_of_copied_object</from>
+        <to>rename_copied_folder_with_protocol_number</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="aggregation_initial_folder_year_month_folder_gateway__count_object_2_be_copied_children">
+        <condition>(approval==1)&amp;&amp;(folder_name == "Πρωτοκολλημένα")</condition>
+        <description/>
+        <from>aggregation_initial_folder_year_month_folder_gateway</from>
+        <to>count_object_2_be_copied_children</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="check_day_folder_in_month_folder__radweriel_error14__visual_radweriel_error">
+        <description/>
+        <from>check_day_folder_in_month_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error14</boundary-event>
+      </transition>
+      <transition name="rename_copied_folder_with_protocol_number__emails_gateway">
+        <description/>
+        <from>rename_copied_folder_with_protocol_number</from>
+        <to>emails_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_day_folder__radweriel_error15__visual_radweriel_error">
+        <description/>
+        <from>creation_of_day_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error15</boundary-event>
+      </transition>
+      <transition name="create_link_2_attached_files_folder__radweriel_error17__visual_radweriel_error">
+        <description/>
+        <from>create_link_2_attached_files_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error17</boundary-event>
+      </transition>
+      <transition name="creation_of_folders_year_month_day_in_given_folder__radweriel_error4__visual_radweriel_error">
+        <description/>
+        <from>creation_of_folders_year_month_day_in_given_folder</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error4</boundary-event>
+      </transition>
+      <transition name="check_initial_folder_gateway__creation_of_folders_given_folder_year_month_day">
+        <condition>folder_name_exist==false</condition>
+        <description/>
+        <from>check_initial_folder_gateway</from>
+        <to>creation_of_folders_given_folder_year_month_day</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="visual_radweriel_error__terminate_due_2_radweriel_error">
+        <description/>
+        <from>visual_radweriel_error</from>
+        <to>terminate_due_2_radweriel_error</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="cc_fc_lfc_gateway__move_folder_2_approved_cases_cc_fc_qol">
+        <condition>folder_name=="Εγκεκριμένα";</condition>
+        <description/>
+        <from>cc_fc_lfc_gateway</from>
+        <to>move_folder_2_approved_cases_cc_fc_qol</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="create_link_2_attached_files_folder__emails_gateway">
+        <description/>
+        <from>create_link_2_attached_files_folder</from>
+        <to>emails_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="aggregation_initial_folder_year_month_folder_gateway__move_temporary_folder_in_rejected_files">
+        <condition>approval==2</condition>
+        <description/>
+        <from>aggregation_initial_folder_year_month_folder_gateway</from>
+        <to>move_temporary_folder_in_rejected_files</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="attached_files_folder_has_children__emails_gateway">
+        <condition>attached_files_folder_has_children==false</condition>
+        <description/>
+        <from>attached_files_folder_has_children</from>
+        <to>emails_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="creation_of_day_folder__cc_fc_lfc_gateway">
+        <description/>
+        <from>creation_of_day_folder</from>
+        <to>cc_fc_lfc_gateway</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="move_temporary_folder_in_rejected_files__radweriel_error7__visual_radweriel_error">
+        <description/>
+        <from>move_temporary_folder_in_rejected_files</from>
+        <to>visual_radweriel_error</to>
+        <is-default>false</is-default>
+        <boundary-event>radweriel_error7</boundary-event>
+      </transition>
+      <transition name="check_year_folder_gateway__check_month_folder_in_year_of_given_folder">
+        <condition>year_name_exist==true</condition>
+        <description/>
+        <from>check_year_folder_gateway</from>
+        <to>check_month_folder_in_year_of_given_folder</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="visual_ldap_error__terminate_due_2_ldap_error">
+        <description/>
+        <from>visual_ldap_error</from>
+        <to>terminate_due_2_ldap_error</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="get_emails_from_agent_in_ldap_and_notify_ou__Terminate_End_Event1">
+        <description/>
+        <from>get_emails_from_agent_in_ldap_and_notify_ou</from>
+        <to>Terminate_End_Event1</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="emails_gateway__Terminate_End_Event1">
+        <condition>(folder_name == "Απεσταλμένα")||(folder_name == "Πρωτοκολλημένα")</condition>
+        <description/>
+        <from>emails_gateway</from>
+        <to>Terminate_End_Event1</to>
+        <is-default>false</is-default>
+      </transition>
+      <transition name="email_notification_of_president_and_agents_for_radweriel_error__terminate_due_2_radweriel_error">
+        <description/>
+        <from>email_notification_of_president_and_agents_for_radweriel_error</from>
+        <to>terminate_due_2_radweriel_error</to>
+        <is-default>false</is-default>
+      </transition>
+    </transitions>
+    <connectors/>
+    <categories/>
+    <event-sub-processes/>
+  </process>
+</process-definition>
