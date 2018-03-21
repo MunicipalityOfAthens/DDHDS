@@ -1,0 +1,14 @@
+CreateDocumentCopyFromPdfBlueprint.jar	--- creates a new pdf file to a specified alfresco repository from a given source(pdf), after removing                                             existing digital signatures and updating document metadata. Needed values are given during initialisation
+Evaluate_if_an_object_has_children.jar	--- evaluates if an alfresco folder contains other nodes. Returns boolean
+GroupMemberActorSelector.jar	          --- retrieves group member uids from an ldap group. 
+MoveObject.jar	                        --- moves an alfresco node within a specified node
+RenameFolder.jar	                      --- updates an alfresco folder's metadata with the given values
+TestGivenTitleInAlfFolder.jar	          --- evaluates if an alfresco folder contains a node with a specified name
+copyObject.jar	                        --- copies an alfresco node within a specified folder
+createFolder.jar	                      --- creates a folder within an alfresco specified node
+delete_object_with_children.jar	        --- deletes an alfresco folder with all containing nodes in subtree level
+getUrlFromSiteName.jar	                --- retrieves url from a given site name
+get_object_uuid.jar	                    --- retrieves an alfresco node's uuid
+get_single_file_uuid_inside_folder.jar	--- retrieves a signle file's uuid inside a folder
+jsonWS.jar	                            --- posts a json body to a specified endpoint 
+renamefile.jar                          --- updates an alfresco file's metadata with the given values
