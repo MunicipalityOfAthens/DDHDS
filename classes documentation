@@ -1,4 +1,6 @@
-CreateDocumentCopyFromPdfBlueprint.jar	--- creates a new pdf file to a specified alfresco repository from a given source(pdf), after removing                                             existing digital signatures and updating document metadata. Needed values are given during initialisation
+CreateDocumentCopyFromPdfBlueprint.jar	--- creates a new pdf file to a specified alfresco repository from a given source(pdf), after    
+                                            removing existing digital signatures and updating document metadata. Needed values are given 
+                                            during initialisation
 Evaluate_if_an_object_has_children.jar	--- evaluates if an alfresco folder contains other nodes. Returns boolean
 GroupMemberActorSelector.jar	          --- retrieves group member uids from an ldap group. 
 MoveObject.jar	                        --- moves an alfresco node within a specified node
